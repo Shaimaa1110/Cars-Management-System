@@ -3,18 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Cars-Management-System": {
+    "carManegnentSystems": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss",
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
+          "style": "scss"
         }
       },
       "root": "",
@@ -24,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/cars-management-system",
+            "outputPath": "dist/car-manegnent-systems",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -71,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Cars-Management-System:build:production"
+              "buildTarget": "carManegnentSystems:build:production"
             },
             "development": {
-              "buildTarget": "Cars-Management-System:build:development"
+              "buildTarget": "carManegnentSystems:build:development"
             }
           },
           "defaultConfiguration": "development"
