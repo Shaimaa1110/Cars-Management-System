@@ -1,0 +1,39 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "Baraa sultan",
+      "phone": "077442211",
+      "email": "baraa@gmail.com",
+      "password": "123456",
+      "address": "Street 123, City"
+    }
+  ],
+  "cars": [
+    {
+      "id": "2",
+      "name": "Toyota Corolla",
+      "model": "2020",
+      "price": 25000,
+      "details": "Stylish and powerful",
+      "image": "assets/images/corolla.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Honda Civic",
+      "model": "2023",
+      "price": 27000,
+      "details": "سيارة رياضية وأنيقة",
+      "image": "assets/images/civic.jpg"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "4",
+      "customerId": 1,
+      "carId": 2,
+      "status": "Booked",
+      "date": "2025-04-20"
+    }
+  ]
+}

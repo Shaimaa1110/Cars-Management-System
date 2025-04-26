@@ -1,0 +1,9 @@
+<div class="car-list">
+    <div *ngFor="let car of cars" class="car-item">
+      <img [src]="'assets/images/' + car.image" alt="{{ car.make }} {{ car.model }}" class="car-image">
+      <h3>{{ car.make }} - {{ car.model }} {{ car.year }}</h3>
+      <p>Price: {{ car.price }} USD</p>
+      <a [routerLink]="['/car-details', car.id]">View Details</a>
+    </div>
+  </div>
+  
