@@ -1,8 +1,0 @@
-<div class="car-details">
-    <img [src]="'assets/images/' + car.make.toLowerCase() + '-' + car.model.toLowerCase() + '.jpg'" alt="{{ car.make }} {{ car.model }}">
-    <h2>{{ car.make }} {{ car.model }}</h2>
-    <p>Year: {{ car.year }}</p>
-    <p>Price: {{ car.price }} USD</p>
-    <button [routerLink]="['/book', car.id]">Book or Purchase</button>
-  </div>
-  

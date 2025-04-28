@@ -1,39 +1,45 @@
 {
-  "customers": [
-    {
-      "id": "1",
-      "name": "Baraa sultan",
-      "phone": "077442211",
-      "email": "baraa@gmail.com",
-      "password": "123456",
-      "address": "Street 123, City"
-    }
-  ],
-  "cars": [
-    {
-      "id": "2",
-      "name": "Toyota Corolla",
-      "model": "2020",
-      "price": 25000,
-      "details": "Stylish and powerful",
-      "image": "assets/images/corolla.jpg"
-    },
-    {
-      "id": "3",
-      "name": "Honda Civic",
-      "model": "2023",
-      "price": 27000,
-      "details": "سيارة رياضية وأنيقة",
-      "image": "assets/images/civic.jpg"
-    }
-  ],
-  "bookings": [
-    {
-      "id": "4",
-      "customerId": 1,
-      "carId": 2,
-      "status": "Booked",
-      "date": "2025-04-20"
-    }
-  ]
-}
+    "customers": [
+      {
+        "id": 1,
+        "name": "baraa",
+        "phone": "123456789",
+        "email": "baraa@gamil.com",
+        "address": "لسعودية"
+      }
+    ],
+    "cars": [
+      {
+        "id": 1,
+        "model": "Toyota Corolla",
+        "year": 2023,
+        "price": 80000,
+        "imageUrl": "assets/images/Toyota Corolla2023.jpg",
+        "available": true
+      },
+      {
+        "id": 2,
+        "model": "BMW X5",
+        "year": 2022,
+        "price": 250000,
+        "imageUrl": "assets/images/bmw 2022.jpg",
+        "available": true
+      },
+      {
+        "id": 3,
+        "model": "handa civic2023",
+        "year": 2024,
+        "price": 150000,
+        "imageUrl": "assets/images/handa civic2023.jpg",
+        "available": true
+      },
+      {
+        "id": 2,
+        "model": "Toyota Corolla",
+        "year": 2020,
+        "price": 240000,
+        "imageUrl": "assets/images/Toyota Corolla2020.jpg",
+        "available": true
+      }
+    ]
+  }

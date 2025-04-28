@@ -1,9 +1,10 @@
-export interface car {
+
+export interface Car {
     id: number;
-    brand: string;
     model: string;
-    price: number;
     year: number;
-    available: boolean;
+    price: number;
     imageUrl: string;
-}
+    available: boolean;
+  }
+  

@@ -1,38 +1,38 @@
-import { NgModule, isDevMode } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
-import { AuthModule } from './auth/auth.module';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
-import { environment } from '../environment/environment';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
+import { CarsListComponent } from './cars-list/cars-list.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-  
+    
     
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     HttpClientModule,
+    BrowserModule,
     AppRoutingModule,
-    RouterModule,
-    AuthModule,
+    ReactiveFormsModule,
     FormsModule,
-    HeaderComponent,
-    FooterComponent,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production, 
-      registrationStrategy: 'registerWhenStable:30000'
-    }),
+    CommonModule,
+    RouterModule,
+    CustomerProfileComponent,
+    CarsListComponent,
+    CarDetailsComponent,
+
+    RouterModule.forRoot([])   
+
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers:[ HttpClient],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
