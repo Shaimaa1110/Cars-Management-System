@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "customers": [
       {
         "id": 1,
@@ -43,3 +44,134 @@
       }
     ]
   }
+=======
+  "customers": [
+    {
+      "id": "0",
+      "fullName": "Abdullah abu alhoof",
+      "email": "abd14@gmail.com",
+      "password": "123456",
+      "conferm_password": "123456",
+      "phone": "0788234567",
+      "registrationDate": "15-4-2025",
+      "gender": "male",
+      "terms": true,
+      "country": "Palasten",
+      "city": "Jeneen",
+      "street": ""
+    },
+    {
+      "id": "1",
+      "fullName": "Ahmad abd alkader abu alkiel",
+      "email": "ahma1234@gmail.com",
+      "password": "12nbhhh6",
+      "conferm_password": "12nbhhh6",
+      "phone": "0788234567",
+      "registrationDate": "5-4-2025",
+      "gender": "male",
+      "terms": true,
+      "country": "Jordan",
+      "city": "Irbid",
+      "street": "almohajereen"
+    },
+    {
+      "id": "2",
+      "fullName": "Ghada Ahmad abu alkeil ",
+      "email": "ghada9@gmail.com",
+      "password": "123pppp",
+      "conferm_password": "123pppp",
+      "phone": "0788234567",
+      "registrationDate": "09-04-2025",
+      "gender": "female",
+      "terms": true,
+      "country": "Jordan",
+      "city": "Amman",
+      "street": "Ardabil"
+    }
+  ],
+  "clients": [
+    {
+      "id": "0",
+      "fullName": "Jammal Ahmad abu alkeil ",
+      "email": "jamal3@gmail.com",
+      "password": "jamal$0",
+      "conferm_password": "jamal$0",
+      "phone": "0788234567",
+      "registrationDate": "08-04-2025",
+      "gender": "male",
+      "terms": true,
+      "country": "Jordan",
+      "city": "Irbid",
+      "street": "Almatlaa"
+    }
+  ],
+  "admins": [
+    {
+      "id": "0",
+      "fullName": "Reem Yousef Husein Huwari",
+      "email": "reem@gmail.com",
+      "password": "$reem$",
+      "conferm_password": "$reem$"
+    },
+    {
+      "id": "1",
+      "fullName": "Aseel ghaleb hamad ",
+      "email": "Aseel@gmail.com",
+      "password": "$Aseel$",
+      "conferm_password": "$Aseel$"
+    },
+    {
+      "id": "2",
+      "fullName": "Baraa Sultan Ananzeh ",
+      "email": "Baraa@gmail.com",
+      "password": "$Baraa$",
+      "conferm_password": "$Baraa$"
+    },
+    {
+      "id": "3",
+      "fullName": "Dema Abed Alnaser Ershedat",
+      "email": "Dema@gmail.com",
+      "password": "$Dema$",
+      "conferm_password": "$Dema$"
+    },
+    {
+      "id": "4",
+      "fullName": "Shaimaa Hamzeh Ghraibeh",
+      "email": "shaimaa@gmail.com",
+      "password": "$shaimaa$",
+      "conferm_password": "$shaimaa$"
+    }
+  ],
+  "users": [
+    {
+      "fullName": "Abdullah abu alhoof",
+      "email": "abd14@gmail.com",
+      "password": "123456",
+      "Type": "customer",
+      "id": "6ef8"
+    },
+    {
+      "id": "cc5e",
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "type": 2
+    }
+  ],
+  "cars": [
+    {
+      "id": "",
+      "name": "",
+      "company": ""
+    }
+  ],
+  "carsModel": [
+    {
+      "id": "",
+      "name": "",
+      "model_id": "",
+      "client_id": ""
+    }
+  ]
+}
+>>>>>>> 0d2bbccaee76eadc5c74018cb7e814611cd2fa63
