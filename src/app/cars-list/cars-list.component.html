@@ -1,13 +1,15 @@
 <div class="cars-list">
-    <h2>قائمة السيارات</h2>
-    <div class="car-card" *ngFor="let car of cars">
-      <img [src]="car.imageUrl" alt="Car Image" class="car-image" />
-      <div class="car-info">
-        <h3>{{ car.model }}</h3>
-        <p>السنة: {{ car.year }}</p>
-        <p>السعر: {{ car.price | currency:'SAR' }}</p>
-        <button (click)="viewCarDetails(car.id)">عرض التفاصيل</button>
-      </div>
+  <h2>قائمة السيارات</h2>
+
+  <div class="car-card" *ngFor="let car of cars">
+    <img *ngIf="car.imageUrl" [src]="car.imageUrl" alt="صورة السيارة" class="car-image" />
+
+    <div class="car-info">
+      <h3>{{ car.model }}</h3>
+      <p>السنة: {{ car.year }}</p>
+      <p>السعر: {{ car.price | currency:'SAR':'symbol':'1.0-0' }}</p>
+
+      <button (click)="viewCarDetails(car.id)">عرض التفاصيل</button>
     </div>
   </div>
-  
+</div>

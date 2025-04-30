@@ -11,34 +11,34 @@
     "cars": [
       {
         "id": 1,
-        "model": "Toyota Corolla",
-        "year": 2023,
+        "model": "BMW X5",
+        "year": 2022,
         "price": 80000,
-        "imageUrl": "assets/images/Toyota Corolla2023.jpg",
+        "imageUrl": "assets/images/bmw-2022.jpg",
         "available": true
       },
       {
         "id": 2,
-        "model": "BMW X5",
-        "year": 2022,
+        "model": "Toyota Corolla",
+        "year": 2023,
         "price": 250000,
-        "imageUrl": "assets/images/bmw 2022.jpg",
+        "imageUrl": "assets/images/Toyota-Corolla-2023.jpg",
         "available": true
       },
       {
         "id": 3,
-        "model": "handa civic2023",
-        "year": 2024,
+        "model": "handa civic",
+        "year": 2023,
         "price": 150000,
-        "imageUrl": "assets/images/handa civic2023.jpg",
+        "imageUrl": "assets/images/handa-civic-2023.jpg",
         "available": true
       },
       {
-        "id": 2,
+        "id": 4,
         "model": "Toyota Corolla",
         "year": 2020,
         "price": 240000,
-        "imageUrl": "assets/images/Toyota Corolla2020.jpg",
+        "imageUrl": "assets/images/toyota-corolla-2020.png",
         "available": true
       }
     ]

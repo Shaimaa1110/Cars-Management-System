@@ -9,10 +9,19 @@ import { RouterModule } from '@angular/router';
 import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
 import { CarsListComponent } from './cars-list/cars-list.component';
 import { CarDetailsComponent } from './car-details/car-details.component';
+import { UpdateCustomerComponent } from './update-customer/update-customer.component';
+import { MyRequestsComponent } from './components/my-requests/my-requests.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CustomerProfileComponent,
+    CarsListComponent,
+    CarDetailsComponent,
+    UpdateCustomerComponent,
+    MyRequestsComponent
+    
+
     
     
   ],
@@ -25,10 +34,8 @@ import { CarDetailsComponent } from './car-details/car-details.component';
     FormsModule,
     CommonModule,
     RouterModule,
-    CustomerProfileComponent,
-    CarsListComponent,
-    CarDetailsComponent,
-
+    
+    
     RouterModule.forRoot([])   
 
   ],

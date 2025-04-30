@@ -1,1 +1,9 @@
-<p>my-requests works!</p>
+<div class="requests-list">
+    <h2>طلباتي</h2>
+    <div *ngFor="let request of requests" class="request-card">
+      <h3>{{ request.car.make }} {{ request.car.model }}</h3>
+      <p>نوع الطلب: {{ request.type }}</p> <!-- Booked or Purchased -->
+      <p>التاريخ: {{ request.date | date:'medium' }}</p>
+    </div>
+  </div>
+  

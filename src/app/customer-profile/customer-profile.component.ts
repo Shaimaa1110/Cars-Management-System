@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomerService } from '../customer.service';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
 
 
 @Component({
   selector: 'app-customer-profile',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+  standalone: false,
   templateUrl: './customer-profile.component.html',
   styleUrls: ['./customer-profile.component.scss']
 })
@@ -20,6 +17,7 @@ export class CustomerProfileComponent implements OnInit {
   ngOnInit(): void {
     const customerId = 1; 
     this.customerService.getCustomer(customerId).subscribe(data => {
+      console.log('Customer data:', data);
       this.customer = data;
     });
   }

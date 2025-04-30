@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CarService } from '../car.service';
 import { Router } from '@angular/router';
 import { Car } from '../models/car.model';
-import { CommonModule } from '@angular/common';
 
 
 
 @Component({
   selector: 'app-cars-list',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './cars-list.component.html',
   styleUrls: ['./cars-list.component.scss']
 })
@@ -21,6 +19,7 @@ import { CommonModule } from '@angular/common';
   
     ngOnInit(): void {
       this.carService.getCars().subscribe((data: Car[]) => {
+        console.log("🚗 بيانات السيارات:", data);
         this.cars = data;
       });
     }

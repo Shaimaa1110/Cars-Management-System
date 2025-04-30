@@ -21,4 +21,8 @@ export class CarService {
   bookCar(id: number, carData: any): Observable<any> {
     return this.http.patch(`${this.apiUrl}/${id}`, carData);
   }
+
+  getMyRequests(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/requests/my`);
+  }
 }

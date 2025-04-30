@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CarService } from '../car.service';
-import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-car-details',
-  standalone: true,
-  imports: [CommonModule],
+  standalone: false,
   templateUrl: './car-details.component.html',
   styleUrls: ['./car-details.component.scss']
 })
