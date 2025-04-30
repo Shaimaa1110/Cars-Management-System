@@ -1,6 +1,7 @@
 <div>
-    <div>Registration Form</div>
+    
     <form [formGroup]="formGroup">
+<div>Registration Form</div>
         <div class="errors" *ngIf="errors.length">
             <div *ngFor="let error of errors;">{{error}}</div>
         </div>
@@ -21,6 +22,9 @@
             <label>{{formNameMapper['password']}}</label>
             <input type="password" formControlName="password" 
             [class.in-valid]="validatorsService.checkNotValidValueExternal(formGroup, 'password')">
+            <span *ngIf="formGroup.get('password')?.invalid">
+                Password must be at least 6 characters long and contain at least one letter and one number.
+   </span>
         </div>
         <div>
             <label>{{formNameMapper['confirm_password']}}</label>

@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UsersService {
-  usersUrl:string="http://localhost:3000/users";
+  usersUrl="http://localhost:3000/users";
   constructor(private http :HttpClient) { }
 
   
@@ -19,8 +19,8 @@ export class UsersService {
 getUser(email: string, password?: string):  Observable<User|undefined> {
  
   
- return this.http.get<User[]|null>(this.usersUrl).pipe(map(users => users?.find(user=> user.email === email && user.password === password))
-  );
+ return this.http.get<User[]>(this.usersUrl).pipe(map(users => users?.find(user=> user.email === email && user.password === password))
+  )
     
     
     

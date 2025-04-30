@@ -18,9 +18,7 @@ import { ValidatorsService } from '../../validators.service';
 })
 export class LoginComponent {
   
-   email: string='';
-password: string='';
- 
+   
 
 
 constructor(private router:Router,private usersService:UsersService,public validatorsService: ValidatorsService ){
@@ -39,9 +37,10 @@ initLoginFormGroup():FormGroup{
 
   login():void{
 
-
-    if(this.password==''&&this.email==''){   
-     this.usersService.getUser(this.email,this.password).subscribe(user => {
+//!this.password.trim() && !this.email.trim()
+    if(this.loginForm.valid){ 
+      const { email, password } = this.loginForm.value; 
+      this.usersService.getUser(email,password).subscribe(user => {
       if (user) {
         this.redirectToUserPage(user)
         
@@ -50,14 +49,12 @@ initLoginFormGroup():FormGroup{
       } else {
         
         alert('❌Invalid email or password');
+
       }
-    });
-    
-   
-   
+    })
    }else{
     
-    alert('❌Invalid email or password !')
+    alert('❌ email or password is required')
    }
 
 }

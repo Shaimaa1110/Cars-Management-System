@@ -78,7 +78,7 @@ export class SignupComponent implements OnInit{
     terms: 'Term and Conditions'
     
   }
-  pattern =/'^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$'/
+  
 
   formGroup: FormGroup = this.initFormGroup();
   errors: string[] = [];
@@ -86,7 +86,7 @@ export class SignupComponent implements OnInit{
     return new FormGroup ({
       fullName: new FormControl('', Validators.required),
       email:new FormControl('',[Validators.required,Validators.email]),
-      password: new FormControl('', [Validators.required ,Validators.pattern(this.pattern)]),
+      password: new FormControl('', [Validators.required ,Validators.pattern('^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{6,}$')]),
 
       confirm_password: new FormControl('', Validators.required),
       phone:new FormControl('',[Validators.required,Validators.min(10)]),
@@ -101,7 +101,7 @@ export class SignupComponent implements OnInit{
        
      
       }),
-      role:new FormControl('', Validators.required),
+      role:new FormControl(''),
     });
 
   }
@@ -140,17 +140,14 @@ export class SignupComponent implements OnInit{
     if (!this.formGroup.valid) { // form group invalid
       Object.keys(this.formGroup.controls).forEach((key: string) => {
         const name = this.formNameMapper[key];
-        if (this.formGroup.controls[key].errors?.['required']) {
+        if (this.formGroup.controls[key].errors?.['required']){
           this.errors.push(`${name} is required`)
         }
         else if (this.formGroup.controls[key].errors?.['email']) {
           this.errors.push(`${name} is invalid email`)
-        
-        }else if (this.formGroup.controls[key].errors?.['password']) {
-          this.errors.push(`${name} must be contine minimum 6 characters at lest one letter and one number `)}
-        
-      })
-    }else { //this form group valid
+         
+      }} )
+  }else { //this form group valid
       this.customer=this.formGroup.value;
       this.client=this.formGroup.value;
       console.log(this.customer);
