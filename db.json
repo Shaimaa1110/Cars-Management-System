@@ -1,0 +1,194 @@
+{
+  "customers": [
+    {
+      "id": "a782",
+      "fullName": "noor yousef",
+      "email": "noor@gmail.com",
+      "password": "1234",
+      "confirm_password": "1234",
+      "phone": 789654567,
+      "registrationDate": "2025-04-11",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "Jordan",
+        "city": "Amman,Jor",
+        "street": ""
+      },
+      "role": "customer"
+    }
+  ],
+  "clients": [
+    
+    {
+      "id": "3577",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "123",
+      "confirm_password": "123",
+      "phone": 786421251,
+      "registrationDate": "2025-04-02",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "Jordan",
+        "city": "Amman,Jor",
+        "street": ""
+      },
+      "role": "Customer"
+    },
+    {
+      "id": "8c08",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "1234",
+      "confirm_password": "1234",
+      "phone": 786421251,
+      "registrationDate": "2025-04-16",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "Jordan",
+        "city": "Amman,Jor",
+        "street": ""
+      },
+      "role": "Customer"
+    },
+    
+  
+    {
+      "id": "93bf",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "123",
+      "confirm_password": "123",
+      "phone": 786421251,
+      "registrationDate": "2025-04-04",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "Jordan",
+        "city": "Amman,Jor",
+        "street": ""
+      },
+      "role": "1"
+    }
+  ],
+  "admins": [
+    {
+      "id": "0",
+      "fullName": "Reem Yousef Husein Huwari",
+      "email": "reem@gmail.com",
+      "password": "$reem$",
+      "conferm_password": "$reem$"
+    },
+    {
+      "id": "1",
+      "fullName": "Aseel ghaleb hamad ",
+      "email": "Aseel@gmail.com",
+      "password": "$Aseel$",
+      "conferm_password": "$Aseel$"
+    },
+    {
+      "id": "2",
+      "fullName": "Baraa Sultan Ananzeh ",
+      "email": "Baraa@gmail.com",
+      "password": "$Baraa$",
+      "conferm_password": "$Baraa$"
+    },
+    {
+      "id": "3",
+      "fullName": "Dema Abed Alnaser Ershedat",
+      "email": "Dema@gmail.com",
+      "password": "$Dema$",
+      "conferm_password": "$Dema$"
+    },
+    {
+      "id": "4",
+      "fullName": "Shaimaa Hamzeh Ghraibeh",
+      "email": "shaimaa@gmail.com",
+      "password": "$shaimaa$",
+      "conferm_password": "$shaimaa$"
+    }
+  ],
+  "users": [
+    {
+      "fullName": "Abdullah abu alhoof",
+      "email": "abd14@gmail.com",
+      "password": "123456",
+      "Type": "customer",
+      "id": "6ef8"
+    },
+    
+    {
+      "id": "ce22",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "123",
+      "type": 1
+    },
+    {
+      "id": "ecae",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "1234",
+      "type": 1
+    },
+    
+    {
+      "id": "ef6c",
+      "fullName": "huda ali",
+      "email": "huda@gmail.com",
+      "password": "123",
+      "type": 1
+    },
+    {
+      "id": "2460",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "123",
+      "type": 1
+    },
+    {
+      "id": "d00a",
+      "fullName": "noor yousef",
+      "email": "noor@gmail.com",
+      "password": "1234",
+      "type": "customer"
+    }
+  ],
+  "cars": [
+    {
+      "id": "",
+      "name": "",
+      "company": ""
+    }
+  ],
+  "carsModel": [
+    {
+      "id": "",
+      "name": "",
+      "model_id": "",
+      "client_id": ""
+    }
+  ],
+  "lookups":
+  [{
+    "id": "5", "name": "Jordan", "type":"country"},
+  {"id": "6","name": "Syria","type": "country"},
+  {"id": "7", "name": "Palestine","type": "country"},
+   {"id": "8", "name": "Saudi Arabia","type": "country"},
+    {"id": "8", "name": "Amman", "type": "city", "parentId": "5"},
+    {"id": "9", "name": "Irbid", "type": "city", "parentId": "5"},
+    {"id": "10", "name": "Dimuscus", "type": "city", "parentId": "6"},
+    {"id": "11", "name": "Alebo", "type": "city", "parentId": "6"},
+      
+    {"id": "12", "name": "Ramallah", "type": "city", "parentId": "7"},
+    {"id": "13", "name": "Nablus", "type": "city", "parentId": "7"},
+    {"id": "14", "name": "Riyadh", "type": "city", "parentId": "8"},
+    {"id": "15", "name": "Maka", "type": "city", "parentId": "8"}
+  ]
+
+   
+ 
+}

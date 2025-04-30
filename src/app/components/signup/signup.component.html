@@ -1,0 +1,110 @@
+<div>
+    <div>Registration Form</div>
+    <form [formGroup]="formGroup">
+        <div class="errors" *ngIf="errors.length">
+            <div *ngFor="let error of errors;">{{error}}</div>
+        </div>
+        <div>
+            <label>{{formNameMapper['fullName']}}</label>
+            <input type="text" name="name" formControlName="fullName" 
+            [class.in-valid]="checkNotValidValue('fullName')"
+            [class.valid]="checkValidValue('fullName')">
+            <span *ngIf="validatorsService.checkValidRequired(formGroup, 'fullName')">Name  is required</span>
+        </div>
+        <div>
+            <label>{{formNameMapper['email']}}</label>
+            <input type="email" formControlName="email" placeholder="e.g@gmail.com"
+            [class.in-valid]="validatorsService.checkNotValidValueExternal(formGroup, 'email')">
+           
+        </div>
+        <div>
+            <label>{{formNameMapper['password']}}</label>
+            <input type="password" formControlName="password" 
+            [class.in-valid]="validatorsService.checkNotValidValueExternal(formGroup, 'password')">
+        </div>
+        <div>
+            <label>{{formNameMapper['confirm_password']}}</label>
+            <input type="password"  formControlName="confirm_password" 
+            [class.in-valid]="validatorsService.checkNotValidValueExternal(formGroup, 'confirm_password')">
+            </div>
+            <div>
+                <label>{{formNameMapper['phone']}}</label>
+                <input type="number" formControlName="phone"
+                [class.in-valid]="validatorsService.checkNotValidValueExternal(formGroup, 'phone')">
+            
+            </div>
+        <div>
+            <label>{{formNameMapper['registrationDate']}}</label>
+            <input type="date" name="registrationDate" formControlName="registrationDate">
+        </div>
+
+        <div>
+            <label>{{formNameMapper['gender']}}</label>
+
+            <select name="gender" formControlName="gender">
+               <option *ngFor="let gender of genders " [value]="gender.key">
+                {{gender.label}}
+               </option>
+            </select>
+        </div>
+        
+
+        <div>
+            <label>{{formNameMapper['terms']}}</label>
+            <label><input type="checkbox" name="terms" formControlName="terms"> I Agree</label>
+        </div>
+
+        
+        <fieldset style="width:50%">
+            <legend>Address</legend>
+        <div formGroupName="address">
+            <div>
+                <label> Country</label>
+                <select   formControlName="country" #country (change)="countryChange(country.value)" >
+                    <option  disabled selected>Select Country</option>
+                    <option *ngFor="let country of countries " [value]="country.id">
+                        {{country.name}}
+                       </option>
+            </select>
+            </div>
+    
+            <div> 
+                <label>City</label>
+                <select    name="city" formControlName="city">
+                    <option disabled selected>Select City</option>
+                    <option *ngFor="let city of cities " [value]="city.id">
+                        {{city.name}}
+                       </option>
+                </select>
+            </div>
+    
+            <div>
+                <label> Street</label>
+                <input type="text" formControlName="street" />
+                
+                
+            </div>
+            
+        </div></fieldset>
+        <hr>
+            
+        <div >
+            <label >Singup As</label>
+               <select formControlName="role">
+                <option value="client">Client</option>
+                <option value="customer">Customer</option>
+               </select>
+          </div>
+         
+        <div>
+            <button type="submit" (click)="onSubmit()" >Submit</button>
+
+        </div>
+    </form>
+</div>
+
+    <div >
+      Already have an account? <a routerLink="/login">Log in</a>
+    </div>
+  
+
