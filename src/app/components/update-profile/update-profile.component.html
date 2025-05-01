@@ -1,0 +1,37 @@
+<div class="update-profile-form">
+  <h2>تعديل الملف الشخصي 👤</h2>
+
+  <form (ngSubmit)="updateProfile()">
+    <label>
+      <span>الاسم الكامل:</span>
+      <input type="text" [(ngModel)]="user.fullName" name="fullName" />
+      <div class="error" *ngIf="fieldErrors.fullName">املأ هذا الحقل</div>
+    </label>
+
+    <label>
+      <span>رقم الهاتف:</span>
+      <input type="text" [(ngModel)]="user.phone" name="phone" />
+      <div class="error" *ngIf="fieldErrors.phone">املأ هذا الحقل</div>
+    </label>
+
+    <label>
+      <span>البلد:</span>
+      <input type="text" [(ngModel)]="user.address.country" name="country" />
+      <div class="error" *ngIf="fieldErrors.country">املأ هذا الحقل</div>
+    </label>
+
+    <label>
+      <span>المدينة:</span>
+      <input type="text" [(ngModel)]="user.address.city" name="city" />
+      <div class="error" *ngIf="fieldErrors.city">املأ هذا الحقل</div>
+    </label>
+
+
+    <label>
+      <span>الصورة الشخصية:</span>
+      <img [src]="user.photoUrl || 'assets/default-profile.png'" alt="صورة المستخدم" class="profile-img" />
+    </label>
+
+    <button type="submit">💾 حفظ التعديلات</button>
+  </form>
+</div>

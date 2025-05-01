@@ -1,0 +1,72 @@
+<div class="add-car-form">
+  <h2>إضافة سيارة جديدة 🚗</h2>
+
+  <form #form="ngForm" (ngSubmit)="addCar(form)">
+
+    <label>
+      <span>العلامة التجارية:</span>
+      <input type="text" name="brand" [(ngModel)]="newCar.brand" required />
+    </label>
+
+    <label>
+      <span>الموديل:</span>
+      <input type="text" name="model" [(ngModel)]="newCar.model" required />
+    </label>
+
+    <label>
+      <span>السنة:</span>
+      <input type="number" name="year" [(ngModel)]="newCar.year" required />
+    </label>
+
+    <label>
+      <span>السعر:</span>
+      <input type="number" name="price" [(ngModel)]="newCar.price" required />
+    </label>
+
+    <label>
+      <span>النوع:</span>
+      <input type="text" name="type" [(ngModel)]="newCar.type" required />
+    </label>
+
+    <label>
+      <span>الحالة:</span>
+      <select name="status" [(ngModel)]="newCar.status" required>
+        <option value="">-- اختر الحالة --</option>
+        <option value="available">متوفرة</option>
+        <option value="rented">مؤجرة</option>
+      </select>
+    </label>
+
+
+    <label>
+      <span>الصورة:</span>
+      <div
+        class="drop-zone"
+        [class.active]="isDropZoneActive"
+        (drop)="onDrop($event)"
+        (dragover)="onDragOver($event)"
+        (dragleave)="onDragLeave($event)"
+      >
+        <p>اسحب الصورة هنا أو انقر لاختيار ملف</p>
+        <input type="file" accept="image/*" (change)="onFileSelect($event)" hidden #fileInput />
+        <div *ngIf="previewImage">
+          <img [src]="previewImage" alt="معاينة" style="max-width: 100%; max-height: 200px;" />
+          <button type="button" (click)="removeImage()">🗑️ حذف الصورة</button>
+        </div>
+        <button type="button" (click)="fileInput.click()">📂 اختيار ملف</button>
+      </div>
+    </label>
+
+    <label>
+      <span>نوع الوقود:</span>
+      <select name="fuelType" [(ngModel)]="newCar.fuelType" required>
+        <option value="">-- اختر نوع الوقود --</option>
+        <option *ngFor="let fuel of ['Petrol', 'Diesel', 'Electric', 'Hybrid']" [value]="fuel">
+          {{ fuel }}
+        </option>
+      </select>
+    </label>
+
+    <button type="submit">➕ إضافة</button>
+  </form>
+</div>

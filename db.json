@@ -1,0 +1,741 @@
+{
+  "customers": [
+    {
+      "id": "0",
+      "fullName": "Abdullah abu alhoof",
+      "email": "0000@gmail.com",
+      "password": "123456",
+      "conferm_password": "123456",
+      "phone": "0788234567",
+      "registrationDate": "15-4-2025",
+      "gender": "male",
+      "terms": true,
+      "country": "Palasten",
+      "city": "Jeneen",
+      "street": "",
+      "role": "customer"
+    },
+    {
+      "id": "1",
+      "fullName": "Ahmad abd alkader abu alkiel",
+      "email": "ahma1234@gmail.com",
+      "password": "12nbhhh6",
+      "conferm_password": "12nbhhh6",
+      "phone": "0788234567",
+      "registrationDate": "5-4-2025",
+      "gender": "male",
+      "terms": true,
+      "country": "Jordan",
+      "city": "Irbid",
+      "street": "almohajereen",
+      "role": "customer"
+    },
+    {
+      "id": "2",
+      "fullName": "Ghada Ahmad abu alkeil ",
+      "email": "ghada9@gmail.com",
+      "password": "123pppp",
+      "conferm_password": "123pppp",
+      "phone": "0788234567",
+      "registrationDate": "09-04-2025",
+      "gender": "female",
+      "terms": true,
+      "country": "Jordan",
+      "city": "Amman",
+      "street": "Ardabil",
+      "role": "customer"
+    },
+    {
+      "id": "b327",
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "confirm_password": "",
+      "phone": null,
+      "registrationDate": null,
+      "gender": "",
+      "terms": null,
+      "country": "",
+      "city": "",
+      "street": "",
+      "role": "customer"
+    },
+    {
+      "id": "5b74",
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "confirm_password": "",
+      "phone": null,
+      "registrationDate": null,
+      "gender": "",
+      "terms": null,
+      "country": "",
+      "city": "",
+      "street": "",
+      "role": "customer"
+    },
+    {
+      "id": "a782",
+      "fullName": "noor yousef",
+      "email": "noor@gmail.com",
+      "password": "1234",
+      "confirm_password": "1234",
+      "phone": 89654567,
+      "registrationDate": "2025-04-11",
+      "gender": "female",
+      "terms": true,
+      "country": "jordan",
+      "city": "amman",
+      "street": "dfg",
+      "role": "customer"
+    }
+  ],
+  "clients": [
+    {
+      "id": "0",
+      "fullName": "Jammal Ahmad abu alkeil ",
+      "email": "jamal3@gmail.com",
+      "password": "jamal$0",
+      "conferm_password": "jamal$0",
+      "phone": "0788234567",
+      "registrationDate": "08-04-2025",
+      "gender": "male",
+      "terms": true,
+      "country": "Jordan",
+      "city": "Irbid",
+      "street": "Almatlaa"
+    },
+    {
+      "id": "3577",
+      "fullName": "reem",
+      "email": "reem@gmail.com",
+      "password": "123",
+      "confirm_password": "123",
+      "phone": "99999999",
+      "registrationDate": "2025-04-02",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "amman",
+        "city": "iamman",
+        "street": ""
+      },
+      "role": "Customer"
+    },
+    {
+      "id": "8c08",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "1234",
+      "confirm_password": "1234",
+      "phone": 786421251,
+      "registrationDate": "2025-04-16",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "Jordan",
+        "city": "Amman,Jor",
+        "street": ""
+      },
+      "role": "Customer"
+    },
+    {
+      "id": "e9a6",
+      "fullName": "huda ",
+      "email": "huda@gmail.com",
+      "password": "123",
+      "confirm_password": "123",
+      "phone": "07999999",
+      "registrationDate": "2025-04-02",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "Jordan",
+        "city": "Amman,Jor",
+        "street": ""
+      },
+      "role": "2",
+      "city": "amman",
+      "country": "amman"
+    },
+    {
+      "id": "4de6",
+      "fullName": "huda ali",
+      "email": "huda@gmail.com",
+      "password": "123",
+      "confirm_password": "123",
+      "phone": 786421251,
+      "registrationDate": "2025-04-02",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "Jordan",
+        "city": "Amman,Jor",
+        "street": ""
+      },
+      "role": "2"
+    },
+    {
+      "id": "93bf",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "123",
+      "confirm_password": "123",
+      "phone": 786421251,
+      "registrationDate": "2025-04-04",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "Jordan",
+        "city": "Amman,Jor",
+        "street": ""
+      },
+      "role": "1"
+    }
+  ],
+  "admins": [
+    {
+      "id": "0",
+      "fullName": "Reem Yousef Husein Huwari",
+      "email": "reem@gmail.com",
+      "password": "$reem$",
+      "conferm_password": "$reem$"
+    },
+    {
+      "id": "1",
+      "fullName": "Aseel ghaleb hamad ",
+      "email": "Aseel@gmail.com",
+      "password": "$Aseel$",
+      "conferm_password": "$Aseel$"
+    },
+    {
+      "id": "2",
+      "fullName": "Baraa Sultan Ananzeh ",
+      "email": "Baraa@gmail.com",
+      "password": "$Baraa$",
+      "conferm_password": "$Baraa$"
+    },
+    {
+      "id": "3",
+      "fullName": "Dema Abed Alnaser Ershedat",
+      "email": "Dema@gmail.com",
+      "password": "$Dema$",
+      "conferm_password": "$Dema$"
+    },
+    {
+      "id": "4",
+      "fullName": "Shaimaa Hamzeh Ghraibeh",
+      "email": "shaimaa@gmail.com",
+      "password": "$shaimaa$",
+      "conferm_password": "$shaimaa$"
+    }
+  ],
+  "users": [
+    {
+      "fullName": "Abdullah abu alhoof",
+      "email": "abd14@gmail.com",
+      "password": "123456",
+      "Type": "customer",
+      "id": "6ef8"
+    },
+    {
+      "id": "6273",
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "type": 2
+    },
+    {
+      "id": "8d00",
+      "fullName": "",
+      "email": "",
+      "password": "",
+      "type": 2
+    },
+    {
+      "id": "ce22",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "123",
+      "type": 1
+    },
+    {
+      "id": "ecae",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "1234",
+      "type": 1
+    },
+    {
+      "id": "ceea",
+      "fullName": "huda ali",
+      "email": "huda@gmail.com",
+      "password": "123",
+      "type": 1
+    },
+    {
+      "id": "ef6c",
+      "fullName": "huda ali",
+      "email": "huda@gmail.com",
+      "password": "123",
+      "type": 1
+    },
+    {
+      "id": "2460",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "123",
+      "type": 1
+    },
+    {
+      "id": "d00a",
+      "fullName": "noor yousef",
+      "email": "noor@gmail.com",
+      "password": "1234",
+      "type": "customer"
+    }
+  ],
+  "cars": [
+    {
+      "id": "5",
+      "brand": "Chevrolet",
+      "model": "Tahoe",
+      "year": 2022,
+      "price": 170000,
+      "type": "SUV",
+      "status": "Not available",
+      "image": "assets/images/شيفروليه_تاهو.jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "13",
+      "brand": "Mercedes",
+      "model": "C-Class",
+      "year": 2024,
+      "price": 320000,
+      "type": "Luxury",
+      "status": "available",
+      "image": "assets/images/images.jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "16",
+      "brand": "Volvo",
+      "model": "XC60 Recharge",
+      "year": 2024,
+      "price": 250000,
+      "type": "SUV",
+      "status": "rented",
+      "image": "assets/images/download.jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "17",
+      "brand": "Ford",
+      "model": "Escape PHEV",
+      "year": 2023,
+      "price": 140000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (1).jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "18",
+      "brand": "Toyota",
+      "model": "RAV4 Prime",
+      "year": 2024,
+      "price": 160000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (2).jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "30",
+      "brand": "BMW",
+      "model": "330e",
+      "year": 2023,
+      "price": 280000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/download (3).jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "31",
+      "brand": "Hyundai",
+      "model": "Tucson Plug-in",
+      "year": 2023,
+      "price": 155000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (4).jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "32",
+      "brand": "Kia",
+      "model": "Sorento Plug-in",
+      "year": 2024,
+      "price": 165000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (5).jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "33",
+      "brand": "Mini",
+      "model": "Countryman SE",
+      "year": 2024,
+      "price": 135000,
+      "type": "Compact",
+      "status": "available",
+      "image": "assets/images/download (6).jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "34",
+      "brand": "Jeep",
+      "model": "Wrangler 4xe",
+      "year": 2024,
+      "price": 210000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (7).jpg",
+      "fuelType": "Hybrid"
+    },
+    {
+      "id": "6",
+      "brand": "Tesla",
+      "model": "Model 3",
+      "year": 2024,
+      "price": 220000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/download (8).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "19",
+      "brand": "Tesla",
+      "model": "Model Y",
+      "year": 2024,
+      "price": 260000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (9).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "20",
+      "brand": "Rivian",
+      "model": "R1S",
+      "year": 45,
+      "price": 350000,
+      "type": "SUV",
+      "status": "rented",
+      "image": "assets/images/download (10).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "21",
+      "brand": "Ford",
+      "model": "Mustang Mach-E",
+      "year": 2024,
+      "price": 240000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (11).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "22",
+      "brand": "Hyundai",
+      "model": "Ioniq 5",
+      "year": 2024,
+      "price": 230000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (12).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "35",
+      "brand": "Kia",
+      "model": "EV6",
+      "year": 2023,
+      "price": 225000,
+      "type": "Crossover",
+      "status": "available",
+      "image": "assets/images/download (13).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "36",
+      "brand": "Nissan",
+      "model": "Leaf",
+      "year": 2023,
+      "price": 150000,
+      "type": "Hatchback",
+      "status": "available",
+      "image": "assets/images/images (1).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "37",
+      "brand": "BMW",
+      "model": "i4",
+      "year": 2024,
+      "price": 290000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/images (2).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "38",
+      "brand": "Audi",
+      "model": "Q4 e-tron",
+      "year": 2024,
+      "price": 310000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (14).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "39",
+      "brand": "Volkswagen",
+      "model": "ID.4",
+      "year": 2024,
+      "price": 200000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (15).jpg",
+      "fuelType": "Electric"
+    },
+    {
+      "id": "40",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "year": 2023,
+      "price": 90000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/download (16).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "41",
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2022,
+      "price": 95000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/download (17).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "42",
+      "brand": "Hyundai",
+      "model": "Elantra",
+      "year": 2023,
+      "price": 92000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/download (18).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "43",
+      "brand": "Mazda",
+      "model": "CX-5",
+      "year": 2024,
+      "price": 130000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (19).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "44",
+      "brand": "Ford",
+      "model": "Focus",
+      "year": 2022,
+      "price": 87000,
+      "type": "Hatchback",
+      "status": "available",
+      "image": "assets/images/download (20).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "45",
+      "brand": "Chevrolet",
+      "model": "Malibu",
+      "year": 2023,
+      "price": 98000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/images (3).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "46",
+      "brand": "Nissan",
+      "model": "Altima",
+      "year": 2023,
+      "price": 100000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/images (4).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "47",
+      "brand": "Kia",
+      "model": "Sportage",
+      "year": 2024,
+      "price": 115000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/download (21).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "48",
+      "brand": "Volkswagen",
+      "model": "Jetta",
+      "year": 2023,
+      "price": 95000,
+      "type": "Sedan",
+      "status": "available",
+      "image": "assets/images/download (22).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "49",
+      "brand": "Peugeot",
+      "model": "3008",
+      "year": 2023,
+      "price": 125000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/images (5).jpg",
+      "fuelType": "Petrol"
+    },
+    {
+      "id": "9",
+      "brand": "BMW",
+      "model": "X5",
+      "year": 2023,
+      "price": 100000,
+      "type": "Luxury",
+      "status": "available",
+      "image": "assets/images/th.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "10",
+      "brand": "Audi",
+      "model": "Q7",
+      "year": 2023,
+      "price": 300004,
+      "type": "Luxury SUV",
+      "status": "rented",
+      "image": "assets/images/ad2020q779188121_1200.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "27",
+      "brand": "Mercedes",
+      "model": "GLC 300d",
+      "year": 2024,
+      "price": 290000,
+      "type": "Luxury SUV",
+      "status": "available",
+      "image": "assets/images/t.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "28",
+      "brand": "Volkswagen",
+      "model": "Touareg",
+      "year": 2023,
+      "price": 270000,
+      "type": "SUV",
+      "status": "rented",
+      "image": "assets/images/VW_Touareg_R50.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "29",
+      "brand": "Land Rover",
+      "model": "Defender",
+      "year": 2024,
+      "price": 340000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/u.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "45",
+      "brand": "Jeep",
+      "model": "Grand Cherokee Diesel",
+      "year": 2022,
+      "price": 260000,
+      "type": "SUV",
+      "status": "available",
+      "image": "assets/images/r.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "46",
+      "brand": "Chevrolet",
+      "model": "Colorado Diesel",
+      "year": 2021,
+      "price": 200000,
+      "type": "Truck",
+      "status": "available",
+      "image": "assets/images/x.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "47",
+      "brand": "GMC",
+      "model": "Sierra 2500HD",
+      "year": 2023,
+      "price": 320000,
+      "type": "Truck",
+      "status": "rented",
+      "image": "assets/images/k.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "48",
+      "brand": "Nissan",
+      "model": "Navara",
+      "year": 2022,
+      "price": 210000,
+      "type": "Pickup",
+      "status": "available",
+      "image": "assets/images/ss.jpg",
+      "fuelType": "Diesel"
+    },
+    {
+      "id": "49",
+      "brand": "Peugeot",
+      "model": "3008 BlueHDi",
+      "year": 2024,
+      "price": 190000,
+      "type": "Crossover",
+      "status": "available",
+      "image": "assets/images/bb.jpg",
+      "fuelType": "Diesel"
+    }
+  ]
+}

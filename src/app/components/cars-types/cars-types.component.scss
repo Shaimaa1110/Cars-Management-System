@@ -1,0 +1,35 @@
+.fuel-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+
+  button {
+    background-size: cover;
+    width: 100px;
+    height: 60px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px black;
+
+    &[data-label="Hybrid"] { background-image: url('/assets/hybrid.jpg'); }
+    &[data-label="Diesel"] { background-image: url('/assets/diesel.jpg'); }
+    &[data-label="Electric"] { background-image: url('/assets/electric.jpg'); }
+    &[data-label="Petrol"] { background-image: url('/assets/petrol.jpg'); }
+
+    &.active {
+      outline: 3px solid #fbc02d;
+    }
+  }
+  /* cars-types.component.scss */
+.profile-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+}

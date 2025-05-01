@@ -1,0 +1,123 @@
+.add-car-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 20px;
+
+    span {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 1rem;
+      transition: border-color 0.3s, box-shadow 0.3s;
+
+      &:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+        outline: none;
+      }
+    }
+  }
+
+  .drop-zone {
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+    position: relative;
+
+    p {
+      margin: 0;
+      color: #666;
+    }
+
+    &.active {
+      border-color: #007bff;
+      background-color: #e6f3ff;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 200px;
+      margin-top: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      margin-top: 10px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+
+    > button:last-child {
+      background-color: #007bff;
+      margin-top: 15px;
+
+      &:hover {
+        background-color: #0069d9;
+      }
+    }
+  }
+
+  .error {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+  }
+
+  button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #3b138a;
+    }
+  }
+}
