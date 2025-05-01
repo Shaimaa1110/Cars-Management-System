@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "carManegnentSystems": {
+=======
+    "carManagementSystems": {
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/car-manegnent-systems",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -34,6 +39,16 @@
             "styles": [
               "src/styles.scss"
             ],
+=======
+            "outputPath": "dist/car-management-systems",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [{ "glob": "**/*", "input": "public" }],
+            "styles": ["src/styles.scss"],
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
             "scripts": []
           },
           "configurations": {
@@ -64,6 +79,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "buildTarget": "carManegnentSystems:build:production"
             },
             "development": {
@@ -95,6 +111,15 @@
             ],
             "scripts": []
           }
+=======
+              "buildTarget": "carManagementSystems:build:production"
+            },
+            "development": {
+              "buildTarget": "carManagementSystems:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
         }
       }
     }

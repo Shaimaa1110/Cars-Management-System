@@ -1,6 +1,7 @@
 {
   "customers": [
     {
+<<<<<<< HEAD
       "id": "0",
       "fullName": "Abdullah abu alhoof",
       "email": "0000@gmail.com",
@@ -89,12 +90,23 @@
       "city": "amman",
       "street": "dfg",
       "role": "customer"
+=======
+      "id": 1,
+      "name": "baraa",
+      "phone": "123456789",
+      "email": "baraa@gamil.com",
+      "address": "لسعودية"
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
     }
   ],
   "clients": [
     {
       "id": "0",
+<<<<<<< HEAD
       "fullName": "Jammal Ahmad abu alkeil ",
+=======
+      "fullName": "Jammal Ahmad abu alkeil",
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
       "email": "jamal3@gmail.com",
       "password": "jamal$0",
       "conferm_password": "jamal$0",
@@ -105,6 +117,7 @@
       "country": "Jordan",
       "city": "Irbid",
       "street": "Almatlaa"
+<<<<<<< HEAD
     },
     {
       "id": "3577",
@@ -192,6 +205,8 @@
         "street": ""
       },
       "role": "1"
+=======
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
     }
   ],
   "admins": [
@@ -204,14 +219,22 @@
     },
     {
       "id": "1",
+<<<<<<< HEAD
       "fullName": "Aseel ghaleb hamad ",
+=======
+      "fullName": "Aseel ghaleb hamad",
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
       "email": "Aseel@gmail.com",
       "password": "$Aseel$",
       "conferm_password": "$Aseel$"
     },
     {
       "id": "2",
+<<<<<<< HEAD
       "fullName": "Baraa Sultan Ananzeh ",
+=======
+      "fullName": "Baraa Sultan Ananzeh",
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
       "email": "Baraa@gmail.com",
       "password": "$Baraa$",
       "conferm_password": "$Baraa$"
@@ -233,6 +256,7 @@
   ],
   "users": [
     {
+<<<<<<< HEAD
       "fullName": "Abdullah abu alhoof",
       "email": "abd14@gmail.com",
       "password": "123456",
@@ -241,10 +265,21 @@
     },
     {
       "id": "6273",
+=======
+      "id": "6ef8",
+      "fullName": "Abdullah abu alhoof",
+      "email": "abd14@gmail.com",
+      "password": "123456",
+      "Type": "customer"
+    },
+    {
+      "id": "cc5e",
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
       "fullName": "",
       "email": "",
       "password": "",
       "type": 2
+<<<<<<< HEAD
     },
     {
       "id": "8d00",
@@ -294,10 +329,13 @@
       "email": "noor@gmail.com",
       "password": "1234",
       "type": "customer"
+=======
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806
     }
   ],
   "cars": [
     {
+<<<<<<< HEAD
       "id": "5",
       "brand": "Chevrolet",
       "model": "Tahoe",
@@ -739,3 +777,46 @@
     }
   ]
 }
+=======
+      "id": 1,
+      "model": "BMW X5",
+      "year": 2022,
+      "price": 80000,
+      "imageUrl": "assets/images/bmw-2022.jpg",
+      "available": true
+    },
+    {
+      "id": 2,
+      "model": "Toyota Corolla",
+      "year": 2023,
+      "price": 250000,
+      "imageUrl": "assets/images/Toyota-Corolla-2023.jpg",
+      "available": true
+    },
+    {
+      "id": 3,
+      "model": "handa civic",
+      "year": 2023,
+      "price": 150000,
+      "imageUrl": "assets/images/handa-civic-2023.jpg",
+      "available": true
+    },
+    {
+      "id": 4,
+      "model": "Toyota Corolla",
+      "year": 2020,
+      "price": 240000,
+      "imageUrl": "assets/images/toyota-corolla-2020.png",
+      "available": true
+    }
+  ],
+  "carsModel": [
+    {
+      "id": "",
+      "name": "",
+      "model_id": "",
+      "client_id": ""
+    }
+  ]
+}
+>>>>>>> 8614823595ec1cad9289d30b814be829103ff806

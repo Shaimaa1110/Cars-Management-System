@@ -1,0 +1,18 @@
+<div class="update-form">
+  <h2>تحديث معلومات العميل</h2>
+  <form *ngIf="customerForm" [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+    <label>الاسم:</label>
+    <input formControlName="name" type="text" />
+
+    <label>الهاتف:</label>
+    <input formControlName="phone" type="text" />
+
+    <label>البريد الإلكتروني:</label>
+    <input formControlName="email" type="email" />
+
+    <label>العنوان:</label>
+    <input formControlName="address" type="text" />
+
+    <button type="submit" [disabled]="!customerForm.valid">تحديث</button>
+  </form>
+</div>

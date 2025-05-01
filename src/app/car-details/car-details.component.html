@@ -1,0 +1,13 @@
+<div class="car-details">
+    <h2>تفاصيل السيارة</h2>
+    <div class="car-image-container">
+      <img [src]="car.imageUrl" alt="Car Image" class="car-image" />
+    </div>
+    <div class="car-info">
+      <h3>{{ car.model }} - {{ car.year }}</h3>
+      <p>السعر: {{ car.price | currency:'SAR' }}</p>
+      <p>مواصفات إضافية: {{ car.description }}</p>
+      <button (click)="bookCar()">حجز السيارة</button>
+    </div>
+  </div>
+  
