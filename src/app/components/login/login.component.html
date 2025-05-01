@@ -1,29 +1,52 @@
 
-<div  class="login">
-    <form [formGroup]="loginForm">
-    <h1 >Login</h1>
-    <div>
+<video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="../assets/mp4/bg.mp4" type="video/mp4" /></video>
+  <div class="masthead">
+    <div class="masthead-content text-white">
+        <div class="container-fluid px-4 px-lg-0">
+            <h1 class="fst-italic lh-1 mb-4">eTraviax</h1>
+            <p class="mb-5">Booking or selling a car in one system provides a seamless user experience!</p>
+                         
         
-        <div>
-            <label  >Email address</label>
-            <input type="text" name="email"  formControlName="email"
+    <form [formGroup]="loginForm" id="contactForm" data-sb-form-api-token="API_TOKEN">
+    <h1 >Login</h1>
+    
+        <div class="row input-group-newsletter">
+        <div  class="col">
+            
+            <input type="text" name="email"  formControlName="email" class="form-control" id="email" placeholder="e.g@gmail.com"
             [class.in-valid]="validatorsService.checkNotValidValueExternal(loginForm, 'email')"/>
         </div>
-        <div  >
-            <label  >Password</label>
-            <input type="password" name="password" formControlName="password" [class.in-valid]="validatorsService.checkNotValidValueExternal(loginForm, 'password')"/>
+        <div   class="col">
+            
+            <input type="password" name="password"  placeholder="Enter paswword"class="form-control" formControlName="password" [class.in-valid]="validatorsService.checkNotValidValueExternal(loginForm, 'password')"/>
         </div>
 
-        <div  >
-            <button (click)="login()" >Login</button>
+        
+            <div class="col-auto"> <button class="btn btn-primary disabled" id="submitButton" (click)="login()" >Login</button></div>
             
-        </div>
+        
 
         
         
         <div > <p>Don't have an account? <a routerLink ='/signup'> <b>Sign Up</b></a></p></div>
-          </div>
-         
+        
+         </div>
      </form>
     
+        
+        </div>
+                        </div>
+                        </div>
+
+    <div class="social-icons">
+        <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+            <a class="btn btn-dark m-3" href="https://jo.linkedin.com/company/iih-ai"><i class="fab fa-linkedin"></i></a>
+            <a class="btn btn-dark m-3" href="https://www.facebook.com/iihcomai/"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-dark m-3" href="https://www.instagram.com/iihcomai/"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
