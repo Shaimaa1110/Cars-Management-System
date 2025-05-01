@@ -18,16 +18,23 @@ export class UpdateCustomerComponent implements OnInit {
     private customerService: CustomerService,
     private router: Router,
     private fb: FormBuilder
-  ) { }
+  ) {}
 
   ngOnInit(): void {
+    this.customerForm = this.fb.group({
+      name: ['', Validators.required],
+      phone: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      address: ['', Validators.required]
+    });
+
     this.customerService.getCustomer(1).subscribe(data => {
       this.customer = data;
-      this.customerForm = this.fb.group({
-        name: [this.customer.name, Validators.required],
-        phone: [this.customer.phone, Validators.required],
-        email: [this.customer.email, [Validators.required, Validators.email]],
-        address: [this.customer.address, Validators.required]
+      this.customerForm.patchValue({
+        name: data.name,
+        phone: data.phone,
+        email: data.email,
+        address: data.address
       });
     });
   }
