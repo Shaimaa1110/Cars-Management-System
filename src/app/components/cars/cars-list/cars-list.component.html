@@ -1,0 +1,9 @@
+<div class="cars-list">
+  <h2>قائمة السيارات</h2>
+  <h3>اختر نوع السيارة</h3>
+  <ul class="fuel-list">
+    <li *ngFor="let type of fuelTypes">
+      <button (click)="showCarsByFuelType(type)">{{ type }}</button>
+    </li>
+  </ul>
+</div>

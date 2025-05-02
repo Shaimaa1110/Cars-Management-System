@@ -20,7 +20,13 @@ export class LoginComponent {
   
    
 
-
+redirectToUserPage(user: User) {
+  if(user.type === UserType.client) {
+    this.router.navigate(['/client-profile']);
+  } else if(user.type === UserType.customer) {
+    this.router.navigate(['/cars-list']);
+  }
+}
 constructor(private router:Router,private usersService:UsersService,public validatorsService: ValidatorsService ){
 
 }
@@ -42,9 +48,8 @@ initLoginFormGroup():FormGroup{
       const { email, password } = this.loginForm.value; 
       this.usersService.getUser(email,password).subscribe(user => {
       if (user) {
-        this.redirectToUserPage(user)
-        
-        alert('✅ Login success'  );
+       alert('✅ Login success'  ); 
+       this.redirectToUserPage(user)
         
       } else {
         
@@ -58,11 +63,5 @@ initLoginFormGroup():FormGroup{
    }
 
 }
-redirectToUserPage(user: User) {
-  if(user.type === UserType.client) {
-    this.router.navigate(['/client-profile']);
-  } else if(user.type === UserType.customer) {
-    this.router.navigate(['/cars']);//update 
-  }
-}
+
 }

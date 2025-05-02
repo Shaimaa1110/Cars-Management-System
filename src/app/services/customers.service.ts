@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { forkJoin, Observable } from 'rxjs';
+import { forkJoin, map, Observable } from 'rxjs';
 import Customer from '../models/customer.model';
 
 import { User } from '../models/user.model';
@@ -32,7 +32,24 @@ export class CustomersService {
   })
    }
  
-  
-      
+   updateCustomer(id: number, updatedCustomer: Customer): Observable<Customer> {
+    return this.http.put<Customer>(`${this.customerUrl}/${id}`, updatedCustomer);
+  }
+
+
+  deleteCustomer(id: number): Observable<void> {
+    return this.http.delete<void>(`${this.customerUrl}/${id}`);
+  }
+    
+  getCustomer(id: number): Observable<any> {
+    return this.http.get(`${this.customerUrl}/${id}`);
+  }
+
+  getCustomerData(email: string): Observable<any> {
+  return this.http.get<Customer[]>(this.customerUrl)
+  .pipe(map(customers => customers?.find(customer=> customer.email === email))
+  )
+  }
+
    
 }

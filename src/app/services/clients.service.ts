@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { forkJoin, Observable } from 'rxjs';
+import { forkJoin, map, Observable } from 'rxjs';
 import { Client } from '../models/client.model';
 import { User } from '../models/user.model';
 import { UserType } from '../enums/user.enum';
@@ -13,8 +13,12 @@ export class ClientsService {
 
   clientUrl:string="http://localhost:3000/clients";
   constructor(private http :HttpClient, private usersService:UsersService) { }
-  getClients(): Observable<Object>{
-   return this.http.get(this.clientUrl)
+  getClients(email:string,password:string): Observable<Client | undefined>{
+    return this.http.get<Client[]>(this.clientUrl).pipe(
+    map(clients =>
+      clients.find(client => client.email === email && client.password === password)
+    ))
+  
   }
   
   addClient(newClient:Client):Observable<Object>{ 
@@ -32,4 +36,14 @@ export class ClientsService {
     
    }
 
+getClientByEmail(email: string): Observable<Client | null> {
+  return  this.http.get<Client[]>(`${this.clientUrl}?email=${email}`).pipe(
+    map(clients => clients.length > 0 ? clients[0] : null)
+  );
+}
+
+
+updateClient(id: string, updatedData: Partial<Client>): Observable<any> {
+  return this.http.put(`${this.clientUrl}/${id}`, updatedData);
+}
 }

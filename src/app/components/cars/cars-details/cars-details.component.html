@@ -1,0 +1,32 @@
+<button (click)="goBack()">🔙 رجوع</button>
+
+<div *ngIf="car; else loading">
+    <h2>تفاصيل السيارة</h2>
+    <img [src]="car.image" alt="{{ car.brand }} {{ car.model }}" width="400" height="250" />
+
+    <ul class="car-info">
+      <li><strong>الماركة:</strong> {{ car.brand }}</li>
+      <li><strong>الموديل:</strong> {{ car.model }}</li>
+      <li><strong>السنة:</strong> {{ car.year }}</li>
+      <li><strong>السعر:</strong> {{ car.price }} ريال</li>
+      <li><strong>نوع الوقود:</strong> {{ car.fuelType }}</li>
+      <li><strong>النوع:</strong> {{ car.type }}</li>
+      <li><strong>الحالة:</strong> {{ car.status }}</li>
+    </ul>
+
+    <button (click)="toggleBookingForm()">حجز</button>
+
+    <div *ngIf="showBookingForm" class="booking-form">
+      <h3>نموذج الحجز</h3>
+      <input type="date" [(ngModel)]="bookingDate" placeholder="تاريخ الحجز" />
+      <input type="date" [(ngModel)]="returnDate" placeholder="تاريخ التسليم" />
+      <input type="text" [(ngModel)]="city" placeholder="المدينة" />
+      <input type="text" [(ngModel)]="street" placeholder="الشارع" />
+      <input type="text" [(ngModel)]="cardNumber" placeholder="رقم البطاقة" />
+      <button (click)="confirmBooking()">تأكيد الحجز</button>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <p>جاري تحميل تفاصيل السيارة...</p>
+  </ng-template>
