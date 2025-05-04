@@ -1,0 +1,61 @@
+<div class="cars-navbar">
+  <button routerLink="/customer-profile">Customer Profile</button>
+  <h2>قائمة السيارات</h2>
+  <h3>اختر نوع الطاقة:</h3>
+  <ul class="fuel-list">
+    <li *ngFor="let type of fuelTypes">
+      <button
+        (click)="selectFuelType(type)"
+        [class.active]="selectedFuelType === type"
+        [attr.data-label]="type">
+        {{ type }}
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div class="cars-types" *ngIf="selectedFuelType">
+  <h3>Cars {{ selectedFuelType }}</h3>
+
+  <div class="search-fields">
+    <input type="text" placeholder="ابحث بالموديل" [(ngModel)]="brandSearchTerm" />
+    <input type="text" placeholder="ابحث بالسعر" [(ngModel)]="priceSearchTerm" />
+    <input type="text" placeholder="ابحث بالسنة" [(ngModel)]="yearSearchTerm" />
+    <button (click)="searchCars()">بحث</button>
+  </div>
+
+  <div class="cars-container">
+    <div *ngFor="let car of searchedCars; trackBy: trackByCarId" class="car-card">
+      <img [src]="car.image" alt="{{ car.brand }} {{ car.model }}" width="250" height="150" />
+      <h4>{{ car.brand }} - {{ car.model }}</h4>
+      <p>السنة: {{ car.year }}</p>
+      <p>السعر: {{ car.price }} ريال</p>
+      <p>النوع: {{ car.type }}</p>
+      <p>الحالة: {{ car.status }}</p>
+
+      <div class="car-actions">
+        <ng-container *ngIf="userType === 'client'; else customerButtons">
+          <button (click)="editCar(car)">تعديل</button>
+          <button (click)="deleteCar(car.id)">حذف</button>
+        </ng-container>
+
+        <ng-template #customerButtons>
+          <button (click)="goToDetails(car.id)">تفاصيل</button>
+        </ng-template>
+      </div>
+
+      <div *ngIf="editingCar && editingCar.id === car.id">
+        <form (ngSubmit)="saveCar()">
+          <input [(ngModel)]="editingCar.brand" name="brand" placeholder="الماركة" />
+          <input [(ngModel)]="editingCar.model" name="model" placeholder="الموديل" />
+          <input [(ngModel)]="editingCar.year" name="year" type="number" placeholder="السنة" />
+          <input [(ngModel)]="editingCar.price" name="price" type="number" placeholder="السعر" />
+          <div class="form-actions">
+            <button type="submit">حفظ</button>
+            <button type="button" (click)="editingCar = null">إلغاء</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

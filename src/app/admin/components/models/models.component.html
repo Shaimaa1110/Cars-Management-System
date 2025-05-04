@@ -1,0 +1,41 @@
+
+<div *ngIf="pagedList.length === 0" class="no-results" style="text-align: center; font-size: 1.5rem; color: #777;">
+  No results found
+</div>
+
+
+<div class="table-container" *ngIf="pagedList.length > 0">
+  <table class="custom-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Model</th>
+        <th>Brand</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of pagedList; let i = index">
+        <td>{{ (currentPage - 1) * itemsPerPage + i + 1 }}</td>
+        <td>{{ item.model }}</td>
+        <td>{{ item.brand }}</td>
+        <td>{{ item.year }}</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination-controls">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+
+    <ng-container *ngFor="let page of totalPagesArray">
+      <button 
+        (click)="changePage(page)" 
+        [class.active]="page === currentPage">
+        {{ page }}
+      </button>
+    </ng-container>
+
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+  </div>
+</div>

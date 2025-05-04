@@ -1,0 +1,58 @@
+<div class="profile-container" [ngClass]="{'dark-mode': isDarkMode}">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <h1>ملفي الشخصي</h1>
+    </div>
+    <div class="navbar-actions">
+      <button class="theme-toggle" (click)="toggleDarkMode()">
+        {{ isDarkMode ? '🌞' : '🌙' }}
+      </button>
+    </div>
+  </nav>
+
+  <div class="profile-header glass-effect">
+    <div class="profile-image">
+      <img [src]="user?.photoUrl || 'assets/default-profile.png'" alt="صورة العميل" />
+    </div>
+    <div class="profile-info">
+      <h2>{{ user?.fullName || 'اسم غير متوفر' }}</h2>
+      <p>{{ user?.email || 'إيميل غير متوفر' }}</p>
+      <button class="logout-btn" (click)="logout()">تسجيل الخروج</button>
+    </div>
+  </div>
+
+  <div class="profile-section glass-effect">
+    <h3>🧾 معلوماتي الشخصية</h3>
+    <button class="edit-btn" routerLink="/client-update">تعديل</button>
+    <ul>
+      <li><strong>الاسم:</strong> {{ user?.fullName }}</li>
+      <li><strong>الإيميل:</strong> {{ user?.email }}</li>
+      <li><strong>رقم الجوال:</strong> {{ user?.phone }}</li>
+      <li><strong>العنوان:</strong> {{user?.address?.country}} - {{user?.address?.city}}</li>
+    </ul>
+  </div>
+
+  <div class="profile-section glass-effect">
+    <h3>🚗 سياراتي</h3>
+    <div class="profile-actions">
+      <button class="edit-btn" routerLink="/cars-list">📋 سياراتي</button>
+      <button class="edit-btn" routerLink="/add-cars">➕ إضافة سيارة</button>
+    </div>
+  </div>
+
+  <div class="profile-section glass-effect">
+    <h3>🚘 طلباتي</h3>
+    <ul>
+      <li>🔹 تويوتا كامري 2020 - <span class="status pending">قيد المراجعة</span></li>
+      <li>🔹 نيسان ألتيما 2021 - <span class="status accepted">تم القبول</span></li>
+    </ul>
+  </div>
+
+  <div class="profile-section glass-effect">
+    <h3>💳 دفعاتي</h3>
+    <ul>
+      <li>🔹 رقم العملية: 123 - 1000 دينار - 01/01/2025</li>
+      <li>🔹 رقم العملية: 124 - 2500 دينار - 10/01/2025</li>
+    </ul>
+  </div>
+</div>

@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: false,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'carManegnentSystems';
-}
+export class AppComponent  {
+
+  constructor(){}
+  
+    
+  }
+

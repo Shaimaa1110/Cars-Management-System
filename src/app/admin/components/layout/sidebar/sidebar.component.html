@@ -1,0 +1,21 @@
+
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+      <div class="sider">
+        <div class="item">
+          <br>
+            <div *ngFor="let item of list; let i = index">
+        <div [style]="color2(i)" (click)="nav(i)">{{item}}</div>
+        <br>
+        </div> 
+        </div>
+        <div class="sider-content">
+        </div>
+      </div>
+     
+      
+  
+      
+  
+    </ul>
+  </nav>

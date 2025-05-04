@@ -1,0 +1,89 @@
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 1.4em; 
+  table-layout: fixed; /* يمنع تغيير حجم الخلايا */
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #0d2f52;
+  padding: 12px;
+  text-align: left;
+  width: 150px; /* عرض ثابت للخلايا */
+}
+
+.data-table th {
+  background-color: #174b7f;
+  color: white;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.yes-btn, .no-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-size: 1.1em; 
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.yes-btn {
+  background-color: #2196F3;
+  color: white;
+}
+
+.yes-btn:hover {
+  background-color: #174b7f;
+}
+
+.no-btn {
+  background-color: #F44336;
+  color: white;
+}
+
+.no-btn:hover {
+  background-color: #D32F2F;
+}
+
+@media (max-width: 600px) {
+  .data-table {
+    font-size: 1.1em; 
+  }
+
+  .yes-btn, .no-btn {
+    padding: 8px;
+    font-size: 1em;
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #174b7f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
