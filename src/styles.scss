@@ -2774,7 +2774,7 @@ textarea.form-control-lg {
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
-  --bs-btn-line-height: 1.5;
+  --bs-btn-line-height: .3;
   --bs-btn-color: #000000;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
@@ -10875,6 +10875,7 @@ video.bg-video {
   display: flex;
   align-items: center;
   justify-content: center;
+  direction: rtl;
 }
 .masthead:before {
   content: "";
@@ -10977,4 +10978,11 @@ video.bg-video {
 }
 .in-valid {
     border: 3px solid red;
+}
+.btn-small {
+  padding: 4px 10px;
+  font-size: 12px;
+  height: auto;
+  line-height: 1.4;
+  border-radius: 4px;
 }

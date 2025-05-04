@@ -77,69 +77,69 @@
   "lookups": [
     {
       "id": "5",
-      "name": "Jordan",
+      "name": "الاردن",
       "type": "country"
     },
     {
       "id": "6",
-      "name": "Syria",
+      "name": "سوريا",
       "type": "country"
     },
     {
       "id": "7",
-      "name": "Palestine",
+      "name": "فلسطين",
       "type": "country"
     },
     {
       "id": "8",
-      "name": "Saudi Arabia",
+      "name": "المملكة العربية السعودية",
       "type": "country"
-    },
-    {
-      "id": "8",
-      "name": "Amman",
-      "type": "city",
-      "parentId": "5"
     },
     {
       "id": "9",
-      "name": "Irbid",
+      "name": "عمان",
       "type": "city",
       "parentId": "5"
     },
     {
       "id": "10",
-      "name": "Dimuscus",
+      "name": "اربد",
       "type": "city",
-      "parentId": "6"
+      "parentId": "5"
     },
     {
       "id": "11",
-      "name": "Alebo",
+      "name": "دمشق",
       "type": "city",
       "parentId": "6"
     },
     {
       "id": "12",
-      "name": "Ramallah",
+      "name": "حلب",
       "type": "city",
-      "parentId": "7"
+      "parentId": "6"
     },
     {
       "id": "13",
-      "name": "Nablus",
+      "name": "رام الله",
       "type": "city",
       "parentId": "7"
     },
     {
       "id": "14",
-      "name": "Riyadh",
+      "name": "نابلس",
+      "type": "city",
+      "parentId": "7"
+    },
+    {
+      "id": "15",
+      "name": "الرياض",
       "type": "city",
       "parentId": "8"
     },
     {
-      "id": "15",
-      "name": "Maka",
+      "id": "16",
+      "name": "مكة",
       "type": "city",
       "parentId": "8"
     }

@@ -48,18 +48,18 @@ initLoginFormGroup():FormGroup{
       const { email, password } = this.loginForm.value; 
       this.usersService.getUser(email,password).subscribe(user => {
       if (user) {
-       alert('✅ Login success'  ); 
+       alert('✅ نجاح تسجيل الدخول'  ); 
        this.redirectToUserPage(user)
         
       } else {
         
-        alert('❌Invalid email or password');
+        alert('❌البريد الإلكتروني أو كلمة المرور غير صالحة');
 
       }
     })
    }else{
     
-    alert('❌ email or password is required')
+    alert('❌ مطلوب البريد الإلكتروني أو كلمة المرور')
    }
 
 }

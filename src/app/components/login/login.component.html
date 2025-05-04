@@ -4,9 +4,17 @@
     <div class="masthead-content text-white">
         <div class="container-fluid px-4 px-lg-0">
             <h1 class="fst-italic lh-1 mb-4">eTraviax</h1>
-            <p class="mb-5">A system for reviewing and booking cars by the users and clients</p>
-                         
-        
+            <span class="mb-5">
+               <h5 >تأجير السيارات</h5>
+               
+               تأمين سيارة سياحية بإنتظارك من خلال حجز السيارة على الإنترنت.
+               <br>
+               كجزء من تقديرنا لعروضنا المتكررة، يستطيع أعضاء ترافيكس الآن التمتع بخيارات ومزايا أوسع عند إستئجار سيارة.
+                قم بالحجز من خلال أيٍ من شركات تأجير السيارات  وخذ سيارتك عند الوصول.
+          
+            </span>
+                       
+      <br><br>
     <form [formGroup]="loginForm" id="contactForm" data-sb-form-api-token="API_TOKEN">
     
     
@@ -18,17 +26,17 @@
         </div>
         <div   class="col">
             
-            <input type="password" name="password"  placeholder="Enter paswword"class="form-control" formControlName="password" [class.in-valid]="validatorsService.checkNotValidValueExternal(loginForm, 'password')"/>
+            <input type="password" name="password"  placeholder="ادخل كلمة السر "class="form-control" formControlName="password" [class.in-valid]="validatorsService.checkNotValidValueExternal(loginForm, 'password')"/>
         </div>
 
         
             
         
-<div class="col-auto"> <button class="btn btn-primary " (click)="login()" >Login</button></div>
+<div class="col-auto"> <button class="btn btn-primary " (click)="login()" >تسجيل الدخول</button></div>
             
         
-        
-        <div > <p>Don't have an account? <a routerLink ='/signup'> <b>Sign Up</b></a></p></div>
+        <hr>
+        <div > <p>ليس لديك حساب؟  <a routerLink ='/signup'> <b> انشاء حساب</b></a></p></div>
         
          </div>
      </form>

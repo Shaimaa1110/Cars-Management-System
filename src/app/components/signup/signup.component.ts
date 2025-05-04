@@ -61,21 +61,21 @@ export class SignupComponent implements OnInit{
  
 
   genders = [
-    { key: 'male', label: 'Male' },
-    { key: 'female', label: 'Female' }
+    { key: 'male', label: 'ذكر' },
+    { key: 'female', label: 'انثى' }
   ]
   
   
   
   formNameMapper:{ [key: string]: string } = {
-    fullName: 'Full Name',
-    email: 'Email Address',
-    password: 'Password',
-    confirm_password: 'confirm-password',
-    phone:'phone',
-    registrationDate: 'Registration Date',
-    gender: 'Gender',
-    terms: 'Term and Conditions'
+    fullName: 'الاسم كامل',
+    email: 'البريد الاكتروني',
+    password: 'كلمة السر',
+    confirm_password: 'تاكيد كلمة السر',
+    phone:'الهاتف',
+    registrationDate: 'تاريخ التسجيل',
+    gender: 'الجنس',
+    terms: 'الشروط والاحكام'
     
   }
   
@@ -141,10 +141,10 @@ export class SignupComponent implements OnInit{
       Object.keys(this.formGroup.controls).forEach((key: string) => {
         const name = this.formNameMapper[key];
         if (this.formGroup.controls[key].errors?.['required']){
-          this.errors.push(`${name} is required`)
+          this.errors.push(`${name} مطلوب`)
         }
         else if (this.formGroup.controls[key].errors?.['email']) {
-          this.errors.push(`${name} is invalid email`)
+          this.errors.push(`${name} البريد الالكتروني غير صحيح`)
          
       }} )
   }else { //this form group valid
@@ -155,19 +155,19 @@ export class SignupComponent implements OnInit{
        this.customersService.addCustomers(this.customer).subscribe({
         next:(data:any)=>{
           console.log(data);
-          alert("Singup success.");
+          alert("نجاح التسجيل.");
         },
         error:(error:any)=>{
-          alert('Signup failed.');
+          alert('فشل التسجيل.');
         }
     });
      }else if(this.client.role === UserType.client){
       this.clientService.addClient(this.client).subscribe({
         next:(data:any)=>{
-          alert("Singup success.");
+          alert("نجاح التسجيل.");
         },
         error:(error:any)=>{
-          alert('Signup failed.');
+          alert('فشل التسجيل.');
         }
     });
      }

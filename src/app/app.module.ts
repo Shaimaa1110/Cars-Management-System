@@ -8,6 +8,9 @@ import { ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { CarsModule } from './components/cars/cars.module';
+import { ClientsModule } from './components/clients/clients.module';
+import { CustomersModule } from './components/customers/customers.module';
 
 
 @NgModule({
@@ -23,7 +26,9 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    
+    CarsModule,
+    ClientsModule,
+    CustomersModule,
     SharedModule
   ],
   providers:[ HttpClient],

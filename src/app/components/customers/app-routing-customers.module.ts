@@ -10,11 +10,11 @@ import { BrowserModule } from "@angular/platform-browser";
 const routes:Routes=[
     
     {
-      path:'Customer-profile',
+      path:'customer-profile',
       component:CustomerProfileComponent
     },
     {
-        path:'Update-customer',
+        path:'update-customer',
       component:UpdateCustomerComponent
     },
    
@@ -25,7 +25,7 @@ const routes:Routes=[
     
     imports: [
       CommonModule,
-      RouterModule
+      RouterModule.forChild(routes)
     
     
     ],

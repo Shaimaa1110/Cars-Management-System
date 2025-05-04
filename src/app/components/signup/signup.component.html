@@ -4,7 +4,8 @@
         <div class="container-fluid px-4 px-lg-0">
     
       <form [formGroup]="formGroup"id="contactForm" data-sb-form-api-token="API_TOKEN">
-      <h3>Registration Form</h3>
+      <h3> انشاء حساب</h3>
+      <h6>الرجاء ادخال البيانات</h6>
       <div class="row input-group-newsletter">
         <div class="errors" *ngIf="errors.length">
             <div *ngFor="let error of errors;">{{error}}</div>
@@ -15,7 +16,7 @@
             <input type="text" name="name" formControlName="fullName" class="form-control"
             [class.in-valid]="checkNotValidValue('fullName')"
             [class.valid]="checkValidValue('fullName')">
-            <span *ngIf="validatorsService.checkValidRequired(formGroup, 'fullName')">Name  is required</span>
+            <span *ngIf="validatorsService.checkValidRequired(formGroup, 'fullName')">الاسم مطلوب</span>
         </div>
         <div  class="col">
             <label>{{formNameMapper['email']}}</label>
@@ -26,10 +27,10 @@
         <span style="display: inline-flex;flex: 1 1 calc(50% - 0.5rem); gap: 10px;">
         <div class="col">
             <label>{{formNameMapper['password']}}</label>
-            <input type="password" formControlName="password" class="form-control"
+            <input type="password" formControlName="password" class="form-control"placeholder="كلمة السر"
             [class.in-valid]="validatorsService.checkNotValidValueExternal(formGroup, 'password')">
             <span *ngIf="formGroup.get('password')?.invalid">
-                Password must be at least 6 characters long and contain at least one letter and one number.
+                يجب أن تتكون كلمة المرور من 6 أحرف على الأقل وتحتوي على حرف واحد ورقم واحد على الأقل.
    </span>
         </div>
         <div class="col">
@@ -61,19 +62,19 @@
             </select>
         </div>
         <div class="col">
-            <label >Singup As</label>
+            <label >تسجيل باسم</label>
                <select formControlName="role"class="form-control">
-                <option value="client">Client</option>
-                <option value="customer">Customer</option>
+                <option value="client">عميل/شركة</option>
+                <option value="customer">مستخدم</option>
                </select>
           </div> 
        </span>
        <div style="display: block;flex: 1 1 calc(50% - 0.5rem);gap: 10px; ">
         <div formGroupName="address"class="col">
             <div>
-                <label> Country</label>
+                <label> البلد</label>
                 <select  style="width: 50%;" formControlName="country" #country class="form-control"(change)="countryChange(country.value)" >
-                    <option  disabled selected>Select Country</option>
+                    <option  disabled selected>اختر البلد</option>
                     <option *ngFor="let country of countries " [value]="country.id">
                         {{country.name}}
                        </option>
@@ -81,9 +82,9 @@
             </div>
     
             <div> 
-                <label>City</label>
+                <label>المدينة</label>
                 <select   style="width: 50%;" name="city" formControlName="city"  class="form-control">
-                    <option disabled selected>Select City</option>
+                    <option disabled selected>اختر المدينة</option>
                     <option *ngFor="let city of cities " [value]="city.id">
                         {{city.name}}
                        </option>
@@ -91,7 +92,7 @@
             </div>
     
             <div>
-                <label> Street</label><br>
+                <label> الشارع</label><br>
                 <input style="width: 50%; height: 15px;" class="form-control" type="text" formControlName="street" />
                 
                 
@@ -103,9 +104,9 @@
        
           <div class="col" style="display:inline;">
             <label>{{formNameMapper['terms']}}</label><br>
-           I Agree<input type="checkbox" style="height: 15px; width: 20px" name="terms" formControlName="terms"/>
+          انا اوافق<input type="checkbox" style="height: 15px; width: 20px" name="terms" formControlName="terms"/>
           <div class="col-auto">
-            <button type="submit" class="btn btn-primary " id="submitButton" (click)="onSubmit()" >Submit</button>
+            <button type="submit" class="btn btn-primary " id="submitButton" (click)="onSubmit()" >تسجيل</button>
 
         </div></div>
         </div>
@@ -114,7 +115,7 @@
 
 <hr>
     <div >
-      Already have an account? <a routerLink="/login">Log in</a>
+      هل لديك حساب بالفعل ؟<a routerLink="/login">تسجيل الدخول</a>
     </div>
         </div>
     </div>
