@@ -1,4 +1,4 @@
-<video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="/assets/mp4/bg.mp4" type="video/mp4" /></video>
+<video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="../assets/Prestige AutoMobile.mp4" type="video/mp4" /></video>
   <div class="masthead" >
     <div class="masthead-content text-white">
         <div class="container-fluid px-4 px-lg-0">
@@ -35,7 +35,7 @@
         </div>
         <div class="col">
             <label>{{formNameMapper['confirm_password']}}</label>
-            <input type="password"  formControlName="confirm_password" class="form-control"
+            <input type="password"  formControlName="confirm_password" class="form-control"placeholder="تاكيد كلمة السر"
             [class.in-valid]="validatorsService.checkNotValidValueExternal(formGroup, 'confirm_password')">
             </div>
             </span>
@@ -103,7 +103,7 @@
             
        
           <div class="col" style="display:inline;">
-            <label>{{formNameMapper['terms']}}</label><br>
+            <a routerLink="/terms">{{formNameMapper['terms']}}</a><br>
           انا اوافق<input type="checkbox" style="height: 15px; width: 20px" name="terms" formControlName="terms"/>
           <div class="col-auto">
             <button type="submit" class="btn btn-primary " id="submitButton" (click)="onSubmit()" >تسجيل</button>

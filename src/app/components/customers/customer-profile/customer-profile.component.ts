@@ -10,31 +10,23 @@ import { CustomersService } from '../../../services/customers.service';
   templateUrl:'./customer-profile.component.html',
   styleUrls: ['./customer-profile.component.scss']
 })
-export class CustomerProfileComponent implements  OnInit {
-  customerData: any = null; // لتخزين بيانات العميل
-  errorMessage: string = ''; // لتخزين رسائل الخطأ
-  
-  constructor(private customerService:CustomersService, private router: Router) {}
+export class CustomerProfileComponent implements OnInit {
+  customer: any = {};
+
+  constructor(private customerService:CustomersService,private router:Router) {}
 
   ngOnInit(): void {
-    const user = JSON.parse(localStorage.getItem('loggedInUser') || '{}');
-    if (user && user.email) {
-      // جلب بيانات العميل من الـ service باستخدام البريد الإلكتروني
-      this.customerService.getCustomerData(user.email).subscribe(data => {
-        if (data) {
-          this.customerData = data;
-        } else {
-          this.errorMessage = 'لم يتم العثور على بيانات العميل';
-        }
-      });
-    } else {
-      this.errorMessage = 'لم يتم العثور على بيانات المستخدم';
-      this.router.navigate(['/login']); // إعادة توجيه المستخدم إلى صفحة تسجيل الدخول
-    }
+    const customerId = 1; 
+    this.customerService.getCustomer(customerId).subscribe(data => {
+      console.log('Customer data:', data);
+      this.customer = data;
+    });
   }
 
-  // دالة لتوجيه المستخدم إلى صفحة تعديل الملف الشخصي
-  editProfile(): void {
-    this.router.navigate(['/edit-profile']); // تأكد من أن المسار /edit-profile موجود
+  updateCustomer(): void {
+    this.customerService.updateCustomer(this.customer.id, this.customer).subscribe(data => {
+     // alert('تم تحديث بياناتك');
+     this.router.navigate(['/update-customer']);
+    });
   }
 }

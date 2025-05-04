@@ -1,0 +1,72 @@
+.customer-profile{
+display: flex;
+  flex-direction: column;
+  min-height: 65vh;
+  
+direction: rtl;
+}
+.customer-profile {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f3f4f6; // خلفية رمادية فاتحة
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    max-height: 700px;
+    h2 {
+      font-size: 2rem;
+      color: #1f2937; // رمادي داكن
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+  
+    .profile-details {
+        display: flex;
+        flex-direction: column;
+       
+    }
+  
+      label {
+        font-weight: bold;
+        color: #374151;
+      }
+  
+      input {
+       
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #d1d5db;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        background-color: #ffffff;
+        transition: border-color 0.3s ease;
+         
+        &:focus {
+          border-color: #6366f1; // بنفسجي فاتح
+          outline: none;
+          box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+      }
+  
+      button {
+        margin-top: 1.5rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        background-color: #4b5563; // رمادي متوسط
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #374151; // رمادي أغمق
+        }
+  
+        &:active {
+          background-color: #1f2937;
+        }
+      }
+    }
+    

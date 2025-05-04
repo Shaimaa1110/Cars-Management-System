@@ -1,0 +1,22 @@
+.footer {
+    background-color: #333; //رمادي داكن
+    color: #f3f4f6;         
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    margin-top: 2rem;
+  
+    p {
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+  
+    @media (min-width: 700px) {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+  

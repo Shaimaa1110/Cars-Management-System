@@ -1,18 +1,21 @@
+<app-navbar></app-navbar>
 <div class="update-form">
-  <h2>تحديث معلومات العميل</h2>
+  <h2>تحديث معلومات المستخدم</h2>
+  <div class="form-details">
   <form *ngIf="customerForm" [formGroup]="customerForm" (ngSubmit)="onSubmit()">
     <label>الاسم:</label>
     <input formControlName="name" type="text" />
-
+     <br>
     <label>الهاتف:</label>
     <input formControlName="phone" type="text" />
-
+<br>
     <label>البريد الإلكتروني:</label>
     <input formControlName="email" type="email" />
-
+<br>
     <label>العنوان:</label>
     <input formControlName="address" type="text" />
-
+<br>
     <button type="submit" [disabled]="!customerForm.valid">تحديث</button>
   </form>
-</div>
+</div></div>
+<app-footer></app-footer>

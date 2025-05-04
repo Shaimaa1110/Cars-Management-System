@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
+import { TermsComponent } from './components/terms/terms.component';
 
 const routes:Routes=[
   {
@@ -15,6 +16,8 @@ const routes:Routes=[
     path:'login',
     component:LoginComponent
   },
+  { path: 'terms', component: TermsComponent },
+
   {
     
     path:'signup',

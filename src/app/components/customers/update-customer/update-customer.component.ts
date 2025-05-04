@@ -45,7 +45,7 @@ export class UpdateCustomerComponent implements OnInit {
       const updatedCustomer = { ...this.customer, ...this.customerForm.value };
       this.customerService.updateCustomer(this.customer.id, updatedCustomer).subscribe(() => {
         alert('تم تحديث المعلومات بنجاح');
-        this.router.navigate(['/profile']);
+        this.router.navigate(['/customer-profile']);
       });
     }
   }

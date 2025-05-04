@@ -10835,7 +10835,7 @@ body {
   height: 100%;
   position: relative;
 }
-body:before {
+/*body:before {
   content: "";
   position: fixed;
   top: 0;
@@ -10845,7 +10845,7 @@ body:before {
   background-color: #2a5555;
   opacity: 0.7;
   z-index: 1;
-}
+}*/
 
 video.bg-video {
   position: fixed;
@@ -10889,7 +10889,7 @@ video.bg-video {
   background-color: rgba(0, 0, 0, 0.85);
 }
 .masthead .masthead-content {
-  position: relative;
+  position:relative;
   max-width: 50rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -10925,14 +10925,14 @@ video.bg-video {
     padding-bottom: 0;
   }
   .masthead:before {
-    transform: skewX(-9deg);
-    transform-origin: top right;
+    transform: skewX(7deg);////////////
+    transform-origin: top right;//////////////
   }
   .masthead .masthead-content {
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 2rem;
-    padding-right: 9rem;
+    padding-left: 9rem;/////////////////////
+    padding-right: 2rem;///////////////////
   }
   .masthead .masthead-content h1, .masthead .masthead-content .h1 {
     font-size: 3.5rem;
@@ -10943,7 +10943,9 @@ video.bg-video {
 }
 @media (min-width: 1200px) {
   .masthead {
-    width: 70vw;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 .social-icons {
@@ -10965,7 +10967,7 @@ video.bg-video {
     position: absolute;
     height: 100%;
     top: 0;
-    right: 2.5rem;
+    left: 2.5rem;/////////
     width: auto;
   }
 }
