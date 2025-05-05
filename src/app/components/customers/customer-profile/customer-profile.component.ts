@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { CustomersService } from '../../../services/customers.service';
 
@@ -11,22 +11,43 @@ import { CustomersService } from '../../../services/customers.service';
   styleUrls: ['./customer-profile.component.scss']
 })
 export class CustomerProfileComponent implements OnInit {
-  customer: any = {};
+  customerData: any = null;
 
-  constructor(private customerService:CustomersService,private router:Router) {}
+  errorMessage: string = '';
+  constructor(private route: ActivatedRoute,private customerService:CustomersService,private router:Router) {}
 
   ngOnInit(): void {
-    const customerId = 1; 
-    this.customerService.getCustomer(customerId).subscribe(data => {
-      console.log('Customer data:', data);
-      this.customer = data;
-    });
-  }
+    const user = JSON.parse(localStorage.getItem('loggedInUser') || '{}');
+    if (user && user.email) {
+      // جلب بيانات العميل من الـ service باستخدام البريد الإلكتروني
+      this.customerService.getCustomerData(user.email).subscribe(data => {
+        if (data) {
+          this.customerData = data;
+        } else {
+          this.errorMessage = 'لم يتم العثور على بيانات العميل';
+        }
+      });
+    } else {
+      this.errorMessage = 'لم يتم العثور على بيانات المستخدم';
+      this.router.navigate(['/login']); // إعادة توجيه المستخدم إلى صفحة تسجيل الدخول
+    }
 
-  updateCustomer(): void {
-    this.customerService.updateCustomer(this.customer.id, this.customer).subscribe(data => {
-     // alert('تم تحديث بياناتك');
-     this.router.navigate(['/update-customer']);
+
+
+    /* 
+    const userId=Number (this.route.snapshot.paramMap.get('id'));
+
+    this.customerService.getCustomer(userId).subscribe({
+      next: (data) => (this.customerData = data),
+      error: () => (this.errorMessage = 'تعذر تحميل بيانات المستخدم', this.router.navigate(['/login']))
     });
+   
+ */
+}
+
+
+  // دالة لتوجيه المستخدم إلى صفحة تعديل الملف الشخصي
+  editProfile(): void {
+    this.router.navigate(['/update-customer']); // تأكد من أن المسار /edit-profile موجود
   }
 }

@@ -77,7 +77,7 @@ export class CarsTypesComponent implements OnInit {
   }
 
   goToDetails(carId: number) {
-    this.router.navigate(['/cars-details', carId]);
+    this.router.navigate(['/cars-details']);
   }
 
   trackByCarId(index: number, car: any): number {

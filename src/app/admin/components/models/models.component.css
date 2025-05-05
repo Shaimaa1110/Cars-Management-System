@@ -1,0 +1,91 @@
+.title {
+  text-align: center;
+  font-size: 40px;  
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.custom-table {
+  table-layout: fixed;
+  width: 100%;
+  max-width: 1700px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #002b45;
+  color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 1.4em;  
+}
+
+.custom-table thead {
+  background-color: #003b5c;
+}
+
+.custom-table th, .custom-table td {
+  padding: 20px 24px;
+  text-align: left;
+  border-bottom: 1px solid #004d7a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-table tr:hover {
+  background-color: #004060;
+}
+
+.delete-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;  
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #d9363e;
+}
+
+@media (max-width: 768px) {
+  .custom-table {
+    font-size: 1.1em;
+  }
+}
+
+.pagination-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  background-color: #006699;
+  color: #ffffff;
+  border: none;
+  margin: 0 5px;
+  padding: 12px 22px; 
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-controls button:hover {
+  background-color: #004d66;
+}
+
+.pagination-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls button.active {
+  background-color: #003b5c;
+  border: 2px solid #ffffff;
+}

@@ -1,6 +1,6 @@
 <button (click)="goBack()">🔙 رجوع</button>
 
-<div *ngIf="car; else loading">
+<div *ngIf="car;else loading">
     <h2>تفاصيل السيارة</h2>
     <img [src]="car.image" alt="{{ car.brand }} {{ car.model }}" width="400" height="250" />
 
@@ -27,6 +27,6 @@
     </div>
   </div>
 
-  <ng-template #loading>
+<ng-template #loading>
     <p>جاري تحميل تفاصيل السيارة...</p>
   </ng-template>

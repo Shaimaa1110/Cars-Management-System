@@ -1,0 +1,111 @@
+.sidebar {
+    min-height: calc(100vh - 60px);
+    background: #1f2d3d;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    width: 240px;
+    z-index: 11;
+    transition: width 0.3s ease, background 0.3s ease;
+    height: 100%;
+  
+    .nav {
+      overflow: hidden;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      padding-bottom: 60px;
+  
+      .nav-item {
+        padding: 0 1.2rem;
+        transition: background 0.25s;
+  
+        .nav-link {
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+          padding: 0.75rem 0;
+          color: #cfd8dc;
+          transition: color 0.45s;
+          cursor: pointer;
+  
+          i.menu-icon {
+            font-size: 1.2rem;
+            line-height: 1;
+            margin-left: auto;
+            color: #cfd8dc;
+          }
+  
+          i.menu-arrow {
+            font-size: 1.2rem;
+            margin-left: auto;
+            color: #cfd8dc;
+          }
+  
+          .menu-title {
+            color: inherit;
+            display: inline-block;
+            font-size: 0.9375rem;
+            line-height: 1;
+            vertical-align: middle;
+          }
+  
+          &:hover {
+            color: #ffffff;
+          }
+  
+          &[aria-expanded="true"] i.menu-arrow:before {
+            content: "\F0140";
+          }
+        }
+  
+        &.active .nav-link {
+          .menu-title {
+            color: #ffffff;
+            font-family: 'Segoe UI Semibold', sans-serif;
+          }
+          i {
+            color: #009688;
+          }
+        }
+  
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+      }
+  
+      &.sub-menu {
+        margin-bottom: 20px;
+        list-style: none;
+  
+        .nav-item {
+          padding: 0;
+          .nav-link {
+            color: #a8b2b8;
+            padding: 0.5rem 1.8rem;
+            font-size: 0.875rem;
+            line-height: 1;
+            position: relative;
+  
+            &:before {
+              content: "\F054";
+              font-family: "Material Design Icons";
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              color: #b0bec5;
+              font-size: 0.75rem;
+            }
+  
+            &.active {
+              color: #ffffff;
+              background: transparent;
+            }
+  
+            &:hover {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }

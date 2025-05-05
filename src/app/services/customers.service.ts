@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { forkJoin, map, Observable } from 'rxjs';
+import { catchError, forkJoin, map, Observable, of, switchMap } from 'rxjs';
 import Customer from '../models/customer.model';
 
 import { User } from '../models/user.model';
@@ -12,14 +12,36 @@ import { UsersService } from './users.service';
 })
 export class CustomersService {
    customerUrl:string="http://localhost:3000/customers";
+   
   constructor(private http :HttpClient ,private usersService:UsersService) { }
   
-  
-  
-
   addCustomers(newCustomer:Customer ):Observable<object>{
   
-  
+    return this.http.get<Customer[]>(this.customerUrl).pipe(
+      map(customers => {
+        const existingCustomer = customers.find(c => c.email === newCustomer.email);
+        if (existingCustomer) {
+          throw new Error('العميل موجود بالفعل');
+        }
+        const user: User = {
+          fullName: newCustomer.fullName,
+          email: newCustomer.email,
+          password: newCustomer.password,
+          type: UserType.customer
+        };
+        return user;
+      }),
+      switchMap(user => {
+        return forkJoin({
+          customer: this.http.post<Customer>(this.customerUrl, newCustomer),
+          user: this.usersService.add(user) 
+        });
+      })
+    );
+  }
+
+
+  /*
      const user: User = {
          fullName: newCustomer.fullName,
          email: newCustomer.email,
@@ -29,8 +51,8 @@ export class CustomersService {
         return forkJoin({
           customer: this.http.post<Customer>(this.customerUrl,newCustomer),
            user:this.usersService.add(user)
-  })
-   }
+  })*/
+   
  
    updateCustomer(id: number, updatedCustomer: Customer): Observable<Customer> {
     return this.http.put<Customer>(`${this.customerUrl}/${id}`, updatedCustomer);
@@ -45,11 +67,19 @@ export class CustomersService {
     return this.http.get(`${this.customerUrl}/${id}`);
   }
 
-  getCustomerData(email: string): Observable<any> {
-  return this.http.get<Customer[]>(this.customerUrl)
-  .pipe(map(customers => customers?.find(customer=> customer.email === email))
-  )
+    // استرجاع جميع العملاء
+  getCustomers(): Observable<Customer[]> {
+    return this.http.get<Customer[]>(this.customerUrl);
   }
+
+// دالة لاسترجاع بيانات العميل فقط
+getCustomerData(email: string): Observable<any> {
+  return this.http.get<any[]>(this.customerUrl).pipe(
+    map(users => users.find(u => u.email === email)),
+    catchError(() => of(undefined))
+  );
+}
+
 
    
 }

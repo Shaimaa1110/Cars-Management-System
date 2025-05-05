@@ -1,0 +1,41 @@
+<div >
+    <div *ngIf="list.length === 0; else showList" class="no-data">
+      <span >No data available</span>
+    </div>
+  
+    <ng-template #showList>
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Country</th>
+              <th>City</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+           <tr *ngFor="let item of paginatedList; let i = index">
+             
+              <td>{{ item.fullName }}</td>
+              <td>{{ item.email }}</td>
+              <td>{{ item.phone}}</td>
+              <td>{{ item.country}}</td>
+              <td>{{ item.city}}</td>
+              <td class="btn-row">
+                <button (click)="yes(i)" class="yes-btn">Yes</button>
+                <button (click)="no(i)" class="no-btn">No</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </ng-template>
+    <div class="pagination">
+      <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+      <span>Page {{ currentPage }} of {{ totalPages }}</span>
+      <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
+    </div>
+  </div>

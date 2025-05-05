@@ -15,4 +15,16 @@ export class AdminsService {
    return this.http.get<User[]|null>(this.adminUrl).pipe(map(users => users?.find(user=> user.email === email && user.password === password))
      );
   }
+
+
+
+
+
+
+
+
+
+
+
+  
 }

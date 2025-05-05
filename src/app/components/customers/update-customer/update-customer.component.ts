@@ -26,7 +26,8 @@ export class UpdateCustomerComponent implements OnInit {
       name: ['', Validators.required],
       phone: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      address: ['', Validators.required]
+      country: ['', Validators.required],
+      city: ['', Validators.required]
     });
 
     this.customerService.getCustomer(1).subscribe(data => {
@@ -35,7 +36,8 @@ export class UpdateCustomerComponent implements OnInit {
         name: data.name,
         phone: data.phone,
         email: data.email,
-        address: data.address
+        country: data.country,
+        city:data.city
       });
     });
   }

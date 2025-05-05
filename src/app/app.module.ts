@@ -11,14 +11,27 @@ import { SharedModule } from './shared/shared.module';
 import { CarsModule } from './components/cars/cars.module';
 import { ClientsModule } from './components/clients/clients.module';
 import { CustomersModule } from './components/customers/customers.module';
-
+import { FormsModule } from '@angular/forms';
+import { admin_Service } from './admin/serves.service';
+import { ModelsComponent } from './admin/components/models/models.component';
+import { HomepageComponent } from './admin/components/layout/homepage/homepage.component';
+import { SidebarComponent } from './admin/components/layout/sidebar/sidebar.component';
+import { HeaderComponent } from './admin/components/layout/header/header.component';
+import { AcceptComponent } from './admin/components/accept/accept.component';
+import { ClientComponent } from './admin/components/client/client.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
-   
+    
+    HomepageComponent,
+    SidebarComponent,
+    HeaderComponent,
+    AcceptComponent,
+    ClientComponent,
+    ModelsComponent
   ],
   imports: [
     CommonModule,
@@ -29,9 +42,11 @@ import { CustomersModule } from './components/customers/customers.module';
     CarsModule,
     ClientsModule,
     CustomersModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    
   ],
-  providers:[ HttpClient],
+  providers:[ HttpClient,admin_Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

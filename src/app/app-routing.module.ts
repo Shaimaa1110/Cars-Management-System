@@ -4,6 +4,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
 import { TermsComponent } from './components/terms/terms.component';
+import { HomepageComponent } from './admin/components/layout/homepage/homepage.component';
+import { AcceptComponent } from './admin/components/accept/accept.component';
+import { ClientComponent } from './admin/components/client/client.component';
+import { ModelsComponent } from './admin/components/models/models.component';
 
 const routes:Routes=[
   {
@@ -22,9 +26,24 @@ const routes:Routes=[
     
     path:'signup',
     component:SignupComponent,
-    canActivate:[],
-    canDeactivate:[]//بدي استخدمها مع save in form update مثلا هل انت متاكد من حفظ البياناات 
-  }
+    canActivate:[],  
+  },
+  {
+    path:'admin-home', 
+    component:HomepageComponent,
+    children:[{
+      path: '',
+      pathMatch:'full',
+      redirectTo: 'accept'
+  
+    },{path:'vew_client',
+      component:ClientComponent},
+      { path: 'accept', component:AcceptComponent  },
+     
+      { path: 'models', component: ModelsComponent }
+     
+ ]
+  },
 ]
 
 @NgModule({

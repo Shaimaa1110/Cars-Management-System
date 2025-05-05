@@ -8,5 +8,6 @@ import { UserType } from '../../enums/user.enum';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
- userType=UserType.client
+ userType=UserType.customer;
+
 }

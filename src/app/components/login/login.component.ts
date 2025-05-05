@@ -21,12 +21,21 @@ export class LoginComponent {
    
 
 redirectToUserPage(user: User) {
-  if(user.type === UserType.client) {
+  if (user.type === UserType.admin) {
+    this.router.navigate(['/admin-home']);
+  } else if (user.type === UserType.client) {
     this.router.navigate(['/client-profile']);
-  } else if(user.type === UserType.customer) {
+  } else if (user.type === UserType.customer) {
     this.router.navigate(['/cars-list']);
+  } else {
+    alert('❌ نوع مستخدم غير معروف');
   }
-}
+  }
+  
+  
+
+
+
 constructor(private router:Router,private usersService:UsersService,public validatorsService: ValidatorsService ){
 
 }
@@ -46,10 +55,11 @@ initLoginFormGroup():FormGroup{
 //!this.password.trim() && !this.email.trim()
     if(this.loginForm.valid){ 
       const { email, password } = this.loginForm.value; 
-      this.usersService.getUser(email,password).subscribe(user => {
+      this.usersService.getUsers(email,password).subscribe(user => {
       if (user) {
        alert('✅ نجاح تسجيل الدخول'  ); 
        this.redirectToUserPage(user)
+      
         
       } else {
         

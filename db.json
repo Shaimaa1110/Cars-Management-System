@@ -1,6 +1,5 @@
 {
   "customers": [
-    
     {
       "id": "3204",
       "fullName": "saed othman ",
@@ -17,20 +16,33 @@
         "street": ""
       },
       "role": "customer"
+    },
+    {
+      "id": "7bba",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "GHazal2022",
+      "confirm_password": "GHazal2022",
+      "phone": 786421251,
+      "registrationDate": "2025-05-13",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "5",
+        "city": "9",
+        "street": ""
+      },
+      "role": "customer"
     }
   ],
-  "clients": [
-    
-    
-    
-  ],
+  "clients": [],
   "admins": [
     {
-      "id": "0",
-      "fullName": "Reem Yousef Husein Huwari",
-      "email": "reem@gmail.com",
-      "password": "$reem$",
-      "conferm_password": "$reem$"
+      "id": "22",
+      "fullName": "ghazal saed",
+      "email": "ghazal@gmail.com",
+      "password": "GHazal2022",
+      "conferm_password": "GHazal2022"
     },
     {
       "id": "1",
@@ -62,18 +74,31 @@
     }
   ],
   "users": [
-    
-   
     {
-      "id": "e35e",
+      "id": "3204",
       "fullName": "saed othman ",
       "email": "saed@gmail.com",
       "password": "saed12345678",
       "type": "customer"
+    },
+    {
+      "id": "7bba",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "GHazal2022",
+      "type": "customer"
+    },
+    {
+      "id": "22",
+      "fullName": "ghazal saed",
+      "email": "ghazal@gmail.com",
+      "password": "GHazal2022",
+      "type": "admin"
     }
+   
+    
+    
   ],
- 
-  
   "lookups": [
     {
       "id": "5",

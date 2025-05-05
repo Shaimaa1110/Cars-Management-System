@@ -2,7 +2,7 @@
    
     <ul class="nav-links">
       <li><a routerLink="/cars-list">قائمة السيارات</a></li>
-      <li><a [routerLink]="userType === 'client' ? '/client-profile' : '/customer-profile'">الملف الشخصي</a></li>
+      <li><a [routerLink]="userType === 'customer' ? '/customer-profile' :'/client-profile' ">الملف الشخصي</a></li>
     </ul>
      <div class="logo">Prestige AutoMobile</div>
   </nav>

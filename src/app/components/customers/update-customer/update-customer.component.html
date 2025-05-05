@@ -12,8 +12,11 @@
     <label>البريد الإلكتروني:</label>
     <input formControlName="email" type="email" />
 <br>
-    <label>العنوان:</label>
-    <input formControlName="address" type="text" />
+    <label>البلد:</label>
+    <input formControlName="country" type="text" />
+<br>
+<label>المدينة:</label>
+<input formControlName="city" type="text" />
 <br>
     <button type="submit" [disabled]="!customerForm.valid">تحديث</button>
   </form>
