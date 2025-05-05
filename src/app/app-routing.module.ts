@@ -8,6 +8,7 @@ import { HomepageComponent } from './admin/components/layout/homepage/homepage.c
 import { AcceptComponent } from './admin/components/accept/accept.component';
 import { ClientComponent } from './admin/components/client/client.component';
 import { ModelsComponent } from './admin/components/models/models.component';
+import { CanActivateAdmin } from './guards/admin-guard.guard';
 
 const routes:Routes=[
   {
@@ -31,6 +32,7 @@ const routes:Routes=[
   {
     path:'admin-home', 
     component:HomepageComponent,
+   //canActivate:[CanActivateAdmin],
     children:[{
       path: '',
       pathMatch:'full',
@@ -42,7 +44,7 @@ const routes:Routes=[
      
       { path: 'models', component: ModelsComponent }
      
- ]
+ ],
   },
 ]
 

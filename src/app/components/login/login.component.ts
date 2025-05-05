@@ -18,10 +18,15 @@ import { ValidatorsService } from '../../validators.service';
 })
 export class LoginComponent {
   
-   
+
+
+    
 
 redirectToUserPage(user: User) {
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
+      localStorage.setItem('userEmail',user.email);
   if (user.type === UserType.admin) {
+    sessionStorage.setItem('username',user.fullName);
     this.router.navigate(['/admin-home']);
   } else if (user.type === UserType.client) {
     this.router.navigate(['/client-profile']);
