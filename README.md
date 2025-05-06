@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CarManegnentSystems
 last change from reem huwari
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# Car-Management-System
+An electronic system for booking and renting cars by companies and Clients under certain conditions that helps users to view and reserve available cars, their price, type and other characteristics, and enables Clients to attract customers to their cars.
+>>>>>>> 319da332307313625efabcd638e9f41f4b74375d

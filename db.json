@@ -33,9 +33,44 @@
         "street": ""
       },
       "role": "customer"
+    },
+    {
+      "id": "f570",
+      "fullName": "nada huwari",
+      "email": "nada@gmail.com",
+      "password": "Nada12345678",
+      "confirm_password": "Nada12345678",
+      "phone": 786546789,
+      "registrationDate": "2016-07-13",
+      "gender": "female",
+      "terms": true,
+      "address": {
+        "country": "5",
+        "city": "9",
+        "street": "اردبيل"
+      },
+      "role": "customer"
     }
   ],
-  "clients": [],
+  "clients": [
+    {
+      "id": "2d76",
+      "fullName": "odai ahmad",
+      "email": "odai@gmail.com",
+      "password": "Odai12345678",
+      "confirm_password": "Odai12345678",
+      "phone": 564367831,
+      "registrationDate": "2005-06-15",
+      "gender": "male",
+      "terms": true,
+      "address": {
+        "country": "7",
+        "city": "13",
+        "street": ""
+      },
+      "role": "client"
+    }
+  ],
   "admins": [
     {
       "id": "22",
@@ -114,6 +149,27 @@
       "fullName": "mohammad saed",
       "email": "mohammad@gmail.com",
       "password": "mohammad@gmail.com",
+      "type": "client"
+    },
+    {
+      "id": "30f1",
+      "fullName": "nada huwari",
+      "email": "nada@gmail.com",
+      "password": "Nada12345678",
+      "type": "customer"
+    },
+    {
+      "id": "5fa0",
+      "fullName": "odai ahmad",
+      "email": "odai@gmail.com",
+      "password": "Odai12345678",
+      "type": "client"
+    },
+    {
+      "id": "2d76",
+      "fullName": "odai ahmad",
+      "email": "odai@gmail.com",
+      "password": "odai@gmail.com",
       "type": "client"
     }
   ],
