@@ -19,6 +19,8 @@ import { SidebarComponent } from './admin/components/layout/sidebar/sidebar.comp
 import { HeaderComponent } from './admin/components/layout/header/header.component';
 import { AcceptComponent } from './admin/components/accept/accept.component';
 import { ClientComponent } from './admin/components/client/client.component';
+import { AdminModule } from './admin/modules/admin.module';
+import { RoutingAdminModule } from './admin/modules/routing-admin.module';
 
 @NgModule({
   declarations: [
@@ -26,12 +28,12 @@ import { ClientComponent } from './admin/components/client/client.component';
     SignupComponent,
     LoginComponent,
     
-    HomepageComponent,
+    /*HomepageComponent,
     SidebarComponent,
     HeaderComponent,
     AcceptComponent,
     ClientComponent,
-    ModelsComponent
+    ModelsComponent*/
   ],
   imports: [
     CommonModule,
@@ -44,7 +46,8 @@ import { ClientComponent } from './admin/components/client/client.component';
     CustomersModule,
     SharedModule,
     FormsModule,
-    
+    AdminModule,
+    RoutingAdminModule 
   ],
   providers:[ HttpClient,admin_Service],
   bootstrap: [AppComponent]
