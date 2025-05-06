@@ -65,7 +65,7 @@ export class AddCarsComponent {
   onFileSelect(event: any) {
     const file = event.target.files[0];
     if (file) this.handleImage(file);
-  }
+  }//
 
   handleImage(file: File) {
     const reader = new FileReader();

@@ -89,15 +89,33 @@
       "type": "customer"
     },
     {
+      "id": "1",
+      "fullName": "Aseel ghaleb hamad ",
+      "email": "Aseel@gmail.com",
+      "password": "$Aseel$",
+      "type": "admin"
+    },
+    {
       "id": "22",
       "fullName": "ghazal saed",
       "email": "ghazal@gmail.com",
       "password": "GHazal2022",
       "type": "admin"
+    },
+    {
+      "id": "0c48",
+      "fullName": "mohammad saed",
+      "email": "mohammad@gmail.com",
+      "password": "Mohammad12345",
+      "type": "client"
+    },
+    {
+      "id": "1b05",
+      "fullName": "mohammad saed",
+      "email": "mohammad@gmail.com",
+      "password": "mohammad@gmail.com",
+      "type": "client"
     }
-   
-    
-    
   ],
   "lookups": [
     {
