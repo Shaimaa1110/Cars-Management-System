@@ -147,7 +147,24 @@ export class SignupComponent {
     } else {
       const formData = this.formGroup.value;
       if (formData.role === UserType.customer) {
-        this.customer = { ...formData, role: UserType.customer };
+        //this.customer = { ...formData, role: UserType.customer };
+        this.customer = {
+  fullName: formData.fullName,
+  email: formData.email,
+  password: formData.password,
+  confirm_password: formData.confirm_password,
+  phone: formData.phone,
+  registrationDate: formData.registrationDate,
+  gender: formData.gender,
+  terms: formData.terms,
+  address: {
+    country: formData.address.country,
+    city: formData.address.city,
+    street: formData.address.street
+  },
+  role: UserType.customer,
+};
+
         this.customersService.addCustomers(this.customer).subscribe({
           next: (data: any) => {
             alert("Signup success.");
@@ -157,7 +174,21 @@ export class SignupComponent {
           }
         });
       } else if (formData.role === UserType.client) {
-        this.client = { ...formData, role: UserType.client };
+        //this.client = { ...formData, role: UserType.client };
+         this.client = {
+  fullName: formData.fullName,
+  email: formData.email,
+  password: formData.password,
+  confirm_password: formData.confirm_password,
+  phone: formData.phone,
+  registrationDate: formData.registrationDate,
+  gender: formData.gender,
+  terms: formData.terms,
+  address: {
+    country: formData.address.country,
+    city: formData.address.city,
+    street: formData.address.street
+  },role: UserType.client };
         this.clientService.addClient(this.client).subscribe({
           next: (data: any) => {
             alert("Signup success.");

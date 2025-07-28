@@ -62,7 +62,7 @@
                 <label> Country</label>
                 <select name="country" formControlName="country" >
                     <option *ngFor="let country of countries " [value]="country.key">
-                        {{country.label}}
+                        {{address.country.label}}
                        </option>
             </select>
             </div>
@@ -71,7 +71,7 @@
                 <label>City</label>
                 <select name="city" formControlName="city" >
                     <option *ngFor="let city of cities " [value]="city.key">
-                        {{city.label}}
+                        {{address.city.label}}
                        </option>
                 </select>
             </div>

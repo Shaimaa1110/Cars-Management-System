@@ -1,240 +1,94 @@
 {
   "customers": [
     {
-<<<<<<< HEAD
-      "id": "0",
-      "fullName": "Abdullah abu alhoof",
-      "email": "0000@gmail.com",
-      "password": "123456",
-      "conferm_password": "123456",
-      "phone": "0788234567",
-      "registrationDate": "15-4-2025",
+      "id": "3204",
+      "fullName": "saed othman ",
+      "email": "saed@gmail.com",
+      "password": "saed12345678",
+      "confirm_password": "saed12345678",
+      "phone": 524840548,
+      "registrationDate": "1997-08-03",
       "gender": "male",
       "terms": true,
-      "country": "Palasten",
-      "city": "Jeneen",
-      "street": "",
+      "address": {
+        "country": "7",
+        "city": "13",
+        "street": ""
+      },
       "role": "customer"
     },
     {
-      "id": "1",
-      "fullName": "Ahmad abd alkader abu alkiel",
-      "email": "ahma1234@gmail.com",
-      "password": "12nbhhh6",
-      "conferm_password": "12nbhhh6",
-      "phone": "0788234567",
-      "registrationDate": "5-4-2025",
-      "gender": "male",
-      "terms": true,
-      "country": "Jordan",
-      "city": "Irbid",
-      "street": "almohajereen",
-      "role": "customer"
-    },
-    {
-      "id": "2",
-      "fullName": "Ghada Ahmad abu alkeil ",
-      "email": "ghada9@gmail.com",
-      "password": "123pppp",
-      "conferm_password": "123pppp",
-      "phone": "0788234567",
-      "registrationDate": "09-04-2025",
+      "id": "7bba",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "GHazal2022",
+      "confirm_password": "GHazal2022",
+      "phone": 786421251,
+      "registrationDate": "2025-05-13",
       "gender": "female",
       "terms": true,
-      "country": "Jordan",
-      "city": "Amman",
-      "street": "Ardabil",
+      "address": {
+        "country": "5",
+        "city": "9",
+        "street": ""
+      },
       "role": "customer"
     },
     {
-      "id": "b327",
-      "fullName": "",
-      "email": "",
-      "password": "",
-      "confirm_password": "",
-      "phone": null,
-      "registrationDate": null,
-      "gender": "",
-      "terms": null,
-      "country": "",
-      "city": "",
-      "street": "",
-      "role": "customer"
-    },
-    {
-      "id": "5b74",
-      "fullName": "",
-      "email": "",
-      "password": "",
-      "confirm_password": "",
-      "phone": null,
-      "registrationDate": null,
-      "gender": "",
-      "terms": null,
-      "country": "",
-      "city": "",
-      "street": "",
-      "role": "customer"
-    },
-    {
-      "id": "a782",
-      "fullName": "noor yousef",
-      "email": "noor@gmail.com",
-      "password": "1234",
-      "confirm_password": "1234",
-      "phone": 89654567,
-      "registrationDate": "2025-04-11",
+      "id": "f570",
+      "fullName": "nada huwari",
+      "email": "nada@gmail.com",
+      "password": "Nada12345678",
+      "confirm_password": "Nada12345678",
+      "phone": 786546789,
+      "registrationDate": "2016-07-13",
       "gender": "female",
       "terms": true,
-      "country": "jordan",
-      "city": "amman",
-      "street": "dfg",
+      "address": {
+        "country": "5",
+        "city": "9",
+        "street": "اردبيل"
+      },
       "role": "customer"
-=======
-      "id": 1,
-      "name": "baraa",
-      "phone": "123456789",
-      "email": "baraa@gamil.com",
-      "address": "لسعودية"
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806
     }
   ],
   "clients": [
     {
-      "id": "0",
-<<<<<<< HEAD
-      "fullName": "Jammal Ahmad abu alkeil ",
-=======
-      "fullName": "Jammal Ahmad abu alkeil",
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806
-      "email": "jamal3@gmail.com",
-      "password": "jamal$0",
-      "conferm_password": "jamal$0",
-      "phone": "0788234567",
-      "registrationDate": "08-04-2025",
+      "id": "2d76",
+      "fullName": "odai ahmad",
+      "email": "odai@gmail.com",
+      "password": "Odai12345678",
+      "confirm_password": "Odai12345678",
+      "phone": 564367831,
+      "registrationDate": "2005-06-15",
       "gender": "male",
       "terms": true,
-      "country": "Jordan",
-      "city": "Irbid",
-      "street": "Almatlaa"
-<<<<<<< HEAD
-    },
-    {
-      "id": "3577",
-      "fullName": "reem",
-      "email": "reem@gmail.com",
-      "password": "123",
-      "confirm_password": "123",
-      "phone": "99999999",
-      "registrationDate": "2025-04-02",
-      "gender": "female",
-      "terms": true,
       "address": {
-        "country": "amman",
-        "city": "iamman",
+        "country": "7",
+        "city": "13",
         "street": ""
       },
-      "role": "Customer"
-    },
-    {
-      "id": "8c08",
-      "fullName": "REEM HUWARI",
-      "email": "reem@gmail.com",
-      "password": "1234",
-      "confirm_password": "1234",
-      "phone": 786421251,
-      "registrationDate": "2025-04-16",
-      "gender": "female",
-      "terms": true,
-      "address": {
-        "country": "Jordan",
-        "city": "Amman,Jor",
-        "street": ""
-      },
-      "role": "Customer"
-    },
-    {
-      "id": "e9a6",
-      "fullName": "huda ",
-      "email": "huda@gmail.com",
-      "password": "123",
-      "confirm_password": "123",
-      "phone": "07999999",
-      "registrationDate": "2025-04-02",
-      "gender": "female",
-      "terms": true,
-      "address": {
-        "country": "Jordan",
-        "city": "Amman,Jor",
-        "street": ""
-      },
-      "role": "2",
-      "city": "amman",
-      "country": "amman"
-    },
-    {
-      "id": "4de6",
-      "fullName": "huda ali",
-      "email": "huda@gmail.com",
-      "password": "123",
-      "confirm_password": "123",
-      "phone": 786421251,
-      "registrationDate": "2025-04-02",
-      "gender": "female",
-      "terms": true,
-      "address": {
-        "country": "Jordan",
-        "city": "Amman,Jor",
-        "street": ""
-      },
-      "role": "2"
-    },
-    {
-      "id": "93bf",
-      "fullName": "REEM HUWARI",
-      "email": "reem@gmail.com",
-      "password": "123",
-      "confirm_password": "123",
-      "phone": 786421251,
-      "registrationDate": "2025-04-04",
-      "gender": "female",
-      "terms": true,
-      "address": {
-        "country": "Jordan",
-        "city": "Amman,Jor",
-        "street": ""
-      },
-      "role": "1"
-=======
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806
+      "role": "client"
     }
   ],
   "admins": [
     {
-      "id": "0",
-      "fullName": "Reem Yousef Husein Huwari",
-      "email": "reem@gmail.com",
-      "password": "$reem$",
-      "conferm_password": "$reem$"
+      "id": "22",
+      "fullName": "ghazal saed",
+      "email": "ghazal@gmail.com",
+      "password": "GHazal2022",
+      "conferm_password": "GHazal2022"
     },
     {
       "id": "1",
-<<<<<<< HEAD
       "fullName": "Aseel ghaleb hamad ",
-=======
-      "fullName": "Aseel ghaleb hamad",
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806
       "email": "Aseel@gmail.com",
       "password": "$Aseel$",
       "conferm_password": "$Aseel$"
     },
     {
       "id": "2",
-<<<<<<< HEAD
       "fullName": "Baraa Sultan Ananzeh ",
-=======
-      "fullName": "Baraa Sultan Ananzeh",
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806
       "email": "Baraa@gmail.com",
       "password": "$Baraa$",
       "conferm_password": "$Baraa$"
@@ -256,86 +110,141 @@
   ],
   "users": [
     {
-<<<<<<< HEAD
-      "fullName": "Abdullah abu alhoof",
-      "email": "abd14@gmail.com",
-      "password": "123456",
-      "Type": "customer",
-      "id": "6ef8"
-    },
-    {
-      "id": "6273",
-=======
-      "id": "6ef8",
-      "fullName": "Abdullah abu alhoof",
-      "email": "abd14@gmail.com",
-      "password": "123456",
-      "Type": "customer"
-    },
-    {
-      "id": "cc5e",
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806
-      "fullName": "",
-      "email": "",
-      "password": "",
-      "type": 2
-<<<<<<< HEAD
-    },
-    {
-      "id": "8d00",
-      "fullName": "",
-      "email": "",
-      "password": "",
-      "type": 2
-    },
-    {
-      "id": "ce22",
-      "fullName": "REEM HUWARI",
-      "email": "reem@gmail.com",
-      "password": "123",
-      "type": 1
-    },
-    {
-      "id": "ecae",
-      "fullName": "REEM HUWARI",
-      "email": "reem@gmail.com",
-      "password": "1234",
-      "type": 1
-    },
-    {
-      "id": "ceea",
-      "fullName": "huda ali",
-      "email": "huda@gmail.com",
-      "password": "123",
-      "type": 1
-    },
-    {
-      "id": "ef6c",
-      "fullName": "huda ali",
-      "email": "huda@gmail.com",
-      "password": "123",
-      "type": 1
-    },
-    {
-      "id": "2460",
-      "fullName": "REEM HUWARI",
-      "email": "reem@gmail.com",
-      "password": "123",
-      "type": 1
-    },
-    {
-      "id": "d00a",
-      "fullName": "noor yousef",
-      "email": "noor@gmail.com",
-      "password": "1234",
+      "id": "3204",
+      "fullName": "saed othman ",
+      "email": "saed@gmail.com",
+      "password": "saed12345678",
       "type": "customer"
-=======
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806
+    },
+    {
+      "id": "7bba",
+      "fullName": "REEM HUWARI",
+      "email": "reem@gmail.com",
+      "password": "GHazal2022",
+      "type": "customer"
+    },
+    {
+      "id": "1",
+      "fullName": "Aseel ghaleb hamad ",
+      "email": "Aseel@gmail.com",
+      "password": "$Aseel$",
+      "type": "admin"
+    },
+    {
+      "id": "22",
+      "fullName": "ghazal saed",
+      "email": "ghazal@gmail.com",
+      "password": "GHazal2022",
+      "type": "admin"
+    },
+    {
+      "id": "0c48",
+      "fullName": "mohammad saed",
+      "email": "mohammad@gmail.com",
+      "password": "Mohammad12345",
+      "type": "client"
+    },
+    {
+      "id": "1b05",
+      "fullName": "mohammad saed",
+      "email": "mohammad@gmail.com",
+      "password": "mohammad@gmail.com",
+      "type": "client"
+    },
+    {
+      "id": "30f1",
+      "fullName": "nada huwari",
+      "email": "nada@gmail.com",
+      "password": "Nada12345678",
+      "type": "customer"
+    },
+    {
+      "id": "5fa0",
+      "fullName": "odai ahmad",
+      "email": "odai@gmail.com",
+      "password": "Odai12345678",
+      "type": "client"
+    },
+    {
+      "id": "2d76",
+      "fullName": "odai ahmad",
+      "email": "odai@gmail.com",
+      "password": "odai@gmail.com",
+      "type": "client"
+    }
+  ],
+  "lookups": [
+    {
+      "id": "5",
+      "name": "الاردن",
+      "type": "country"
+    },
+    {
+      "id": "6",
+      "name": "سوريا",
+      "type": "country"
+    },
+    {
+      "id": "7",
+      "name": "فلسطين",
+      "type": "country"
+    },
+    {
+      "id": "8",
+      "name": "المملكة العربية السعودية",
+      "type": "country"
+    },
+    {
+      "id": "9",
+      "name": "عمان",
+      "type": "city",
+      "parentId": "5"
+    },
+    {
+      "id": "10",
+      "name": "اربد",
+      "type": "city",
+      "parentId": "5"
+    },
+    {
+      "id": "11",
+      "name": "دمشق",
+      "type": "city",
+      "parentId": "6"
+    },
+    {
+      "id": "12",
+      "name": "حلب",
+      "type": "city",
+      "parentId": "6"
+    },
+    {
+      "id": "13",
+      "name": "رام الله",
+      "type": "city",
+      "parentId": "7"
+    },
+    {
+      "id": "14",
+      "name": "نابلس",
+      "type": "city",
+      "parentId": "7"
+    },
+    {
+      "id": "15",
+      "name": "الرياض",
+      "type": "city",
+      "parentId": "8"
+    },
+    {
+      "id": "16",
+      "name": "مكة",
+      "type": "city",
+      "parentId": "8"
     }
   ],
   "cars": [
     {
-<<<<<<< HEAD
       "id": "5",
       "brand": "Chevrolet",
       "model": "Tahoe",
@@ -777,46 +686,3 @@
     }
   ]
 }
-=======
-      "id": 1,
-      "model": "BMW X5",
-      "year": 2022,
-      "price": 80000,
-      "imageUrl": "assets/images/bmw-2022.jpg",
-      "available": true
-    },
-    {
-      "id": 2,
-      "model": "Toyota Corolla",
-      "year": 2023,
-      "price": 250000,
-      "imageUrl": "assets/images/Toyota-Corolla-2023.jpg",
-      "available": true
-    },
-    {
-      "id": 3,
-      "model": "handa civic",
-      "year": 2023,
-      "price": 150000,
-      "imageUrl": "assets/images/handa-civic-2023.jpg",
-      "available": true
-    },
-    {
-      "id": 4,
-      "model": "Toyota Corolla",
-      "year": 2020,
-      "price": 240000,
-      "imageUrl": "assets/images/toyota-corolla-2020.png",
-      "available": true
-    }
-  ],
-  "carsModel": [
-    {
-      "id": "",
-      "name": "",
-      "model_id": "",
-      "client_id": ""
-    }
-  ]
-}
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806

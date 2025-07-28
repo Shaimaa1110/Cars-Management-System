@@ -9,10 +9,8 @@ export interface Client {
   registrationDate: Date | null;
   gender: string;
   terms: boolean | null;
-  country: string;
-  city: string;
-  street: string;
-  address?: {
+  
+  address: {
     country: string;
     city: string;
     street: string;

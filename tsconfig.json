@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
@@ -26,7 +26,7 @@
     "strictTemplates": true
   }
 }
-=======
+
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
@@ -54,4 +54,4 @@
     "strictTemplates": true
   }
 }
->>>>>>> 8614823595ec1cad9289d30b814be829103ff806
+
